@@ -1,0 +1,312 @@
+body {
+    background-color: #f7f7f7;
+    font-family: "aktiv-grotesk-thin",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+h2 {
+    word-break:break-all;
+}
+
+/*Subject to change depending on selected font*/
+h4 {
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 15px;
+}   
+
+.spacing {
+    line-height: 25px;
+}
+
+
+
+.row-space {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row-space2x {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.fade {
+  opacity: 1;
+}
+
+.cover-container {
+    height: 350px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.cover-item {
+    background-position: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 300px;
+    height: 350px;
+    vertical-align: middle;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.parallax {
+    background: url(../images/IMG_1859.JPG) no-repeat fixed 100%;
+    background-size: cover;
+}
+
+.parallax-two {
+    background: url(../images/i3OA2PJ.jpg) repeat fixed 100%;
+    height: 800px;
+}
+
+
+header { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project-landing {
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    align-items: center;    
+}
+
+.custom-mac {
+    height: 250px;
+}
+
+.custom-row {
+    margin-bottom: 0px;
+}
+
+.landing-name-box {
+    margin-bottom: 150px;   
+}
+
+.quote-box {
+    background-color: #f4f4f2;
+    color: rgb(198, 198, 198);
+    height: 250px;
+    margin-bottom: 300px;
+}
+
+.quote-box p {
+    color: rgb(198, 198, 198);
+    font-size: 11px;
+    margin-top: 100px;
+}
+
+.hover {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 100px; 
+}
+
+.btm-spacing {
+    margin-top: 200px;
+}
+
+.hideme {
+    opacity:0;
+}
+
+.thumbnail {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.img-hover > a h4 {
+    opacity: 0;
+    transition: .5s;
+    color: #222; 
+}
+
+.img-hover > a p {
+    opacity: 0;
+    transition: .5s;
+}
+
+.img-hover > a:hover h4,
+.img-hover > a:hover p {
+    opacity: 1;
+}
+
+.img-hover > a:hover {
+    text-decoration: none;
+}
+
+
+/* Navbar elements */
+
+.navbar {
+    color: black;
+    background-color: transparent;
+}
+
+.navbar .navbar-brand {
+    color: #222;
+}
+
+.navbar .navbar-left > li > a {
+    color: #a1a1a1;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.navbar .navbar-left > li > a:hover {
+    color: #222;
+}
+
+.navbar .navbar-left > li.active > a {
+    color: #222;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.icon-bar
+{
+  background:#bbb !important; /*Whatever colour you want for icon lines*/
+}
+.navbar-toggle
+{
+  background: transparent !important; /*Whatever colour you want for background */
+}
+.container-fluid {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #a1a1a1;
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+.center {
+    font-weight: 500;
+    text-align: center;
+    font-size: 45px; 
+    letter-spacing: 2px;
+
+}
+
+.title {
+    font-weight: 500;
+    font-size: 35px; 
+    letter-spacing: 2px;
+
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+.dropdown-full {
+    display: none;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768) { 
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .custom-row {
+        margin-bottom: 350px
+    }
+    
+    .custom-mac {
+        height: 500px;
+    }
+    .img {
+    height: 700px;
+    background: url(../images/dawgdeals_3.png) no-repeat fixed 100%; margin-bottom:0px; background-size:contain;
+}
+    .header > h1 {
+        margin-top: 50px
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1280px) {  
+    .custom-row {
+        margin-bottom: 450px
+    }
+    .img {
+    height: 700px;
+    background: url(../images/dawgdeals_3.png) no-repeat fixed 100%; margin-bottom:0px; background-size:contain;
+}
+        .header > h1 {
+        margin-top: 100px
+    }
+    
+    .header > p {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 1680px) {  
+    .custom-row {
+        margin-bottom: 625px
+    }
+    .custom-mac {
+        height: 800px;
+    }
+    .img {
+    height: 700px;
+    background: url(../images/dawgdeals_3.png) no-repeat fixed 100%; margin-bottom:0px; background-size:contain;
+}
+            .header > h1 {
+        margin-top: 250px
+    }
+        .header > p {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
