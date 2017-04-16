@@ -1,6 +1,8 @@
 body {
     background-color: #f7f7f7;
-    font-family: "aktiv-grotesk-thin",sans-serif;
+        font-family: "aktiv-grotesk-thin",sans-serif;
+
+/*    font-family: "aktiv-grotesk",sans-serif;*/
     font-style: normal;
     font-weight: 300;
     letter-spacing: 1px;
@@ -24,8 +26,9 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
+p {    
     font-size: 15px;
+    font-style: normal;
 }   
 
 .spacing {
@@ -68,17 +71,6 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-.parallax {
-    background: url(../images/IMG_1859.JPG) no-repeat fixed 100%;
-    background-size: cover;
-}
-
-.parallax-two {
-    background: url(../images/i3OA2PJ.jpg) repeat fixed 100%;
-    height: 800px;
-}
-
 
 header { 
     height: 100vh;
@@ -221,7 +213,6 @@ hr {
 }
 
 .center {
-    font-weight: 500;
     text-align: center;
     font-size: 45px; 
     letter-spacing: 2px;
@@ -229,9 +220,9 @@ hr {
 }
 
 .title {
-    font-weight: 500;
     font-size: 35px; 
     letter-spacing: 2px;
+    font-style: normal;
 
 }
 
