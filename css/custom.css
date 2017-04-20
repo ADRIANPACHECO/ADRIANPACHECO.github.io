@@ -1,5 +1,5 @@
 body {
-    background-color: #f7f7f7;
+    background-color: #ebebeb;
         font-family: "aktiv-grotesk-thin",sans-serif;
 
 /*    font-family: "aktiv-grotesk",sans-serif;*/
@@ -26,7 +26,8 @@ a:hover {
     text-decoration: underline;
 }
 
-p {    
+
+p {   
     font-size: 15px;
     font-style: normal;
 }   
@@ -213,9 +214,11 @@ hr {
 }
 
 .center {
+    font-family: "aktiv-grotesk",sans-serif;
     text-align: center;
-    font-size: 45px; 
+    font-size: 35px; 
     letter-spacing: 2px;
+    font-weight: 300;
 
 }
 
