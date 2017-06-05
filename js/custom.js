@@ -1,7 +1,9 @@
+
 $(document).ready(function() {
     
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
+        
     
         /* Check the location of each desired element */
         $('.hideme').each( function(i){
@@ -19,10 +21,11 @@ $(document).ready(function() {
             }
         }); 
         
+
 //        $(".fade").css("opacity", 1 - $(window).scrollTop() / 700);
+
     
     });
-    
     
 });
 

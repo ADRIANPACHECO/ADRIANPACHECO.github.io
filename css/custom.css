@@ -28,7 +28,7 @@ a:hover {
 
 
 p {   
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
 }   
 
@@ -216,14 +216,14 @@ hr {
 .center {
     font-family: "aktiv-grotesk",sans-serif;
     text-align: center;
-    font-size: 35px; 
+    font-size: 30px; 
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 100;
 
 }
 
 .title {
-    font-size: 35px; 
+    font-size: 30px; 
     letter-spacing: 2px;
     font-style: normal;
 
@@ -236,6 +236,56 @@ hr {
 .dropdown-full {
     display: none;
 }
+
+.carousel-indicators > li {
+ background: #a1a1a1;
+}
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    border: 1;
+    border-color: transparent;
+    margin: 0 4px;
+    height: 3px;
+    border-radius: 0;
+    width: 50px;
+  }
+
+.carousel-fade .carousel-inner > .item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner > .item,
+.carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner > .item.active,
+.carousel-fade .carousel-inner > .item.next.left {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner > .next,
+.carousel-fade .carousel-inner > .prev,
+.carousel-fade .carousel-inner > .active.left,
+.carousel-fade .carousel-inner > .active.right {
+    left: 0;
+}
+.carousel-fade .carousel-inner > .item.next,
+.carousel-fade .carousel-inner > .item.active.right,
+.carousel-fade .carousel-inner > .item.prev,
+.carousel-fade .carousel-inner > .item.active.left {
+    transform: translate3d(0, 0, 0);
+}
+
+/*
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    width: 100px;
+    height: 25px;
+    border-radius: 0;
+    border: solid 1px grey;
+    background: lightgrey;
+    text-indent: 0;
+}
+*/
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
