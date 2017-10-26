@@ -1,10 +1,10 @@
 body {
     background-color: #F2F2F2;
-    font-family: 'Lato', sans-serif;
+    font-family: "aktiv-grotesk", sans-serif;
     font-style: normal;
     letter-spacing: 1px;
     font-weight:200;
-    color: #333;
+    color: #333; 
 }
 
 h1 {
@@ -37,15 +37,15 @@ p {
 
 
 .row-space {
-    padding-top: 35px; padding-bottom: 35px;
+    padding-top: 25px; padding-bottom: 25px;
 }
 
 .row-space2x {
-    padding-top: 100px;
+    padding-top: 75px;
 }
 
 .row-spaceX {
-    padding-top: 50px; padding-bottom: 50px;"
+    padding-top: 75px; padding-bottom: 75px;
 }
 
 .fade {
@@ -135,7 +135,7 @@ header {
 
 .navbar {
     background-color: transparent;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 
@@ -168,8 +168,6 @@ header {
     
   
 }
-
-
 .icon-bar
 {
   background:#bbb !important; /*Whatever colour you want for icon lines*/
@@ -179,18 +177,33 @@ header {
   background: transparent !important; /*Whatever colour you want for background */
 }
 .container-fluid {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.testimonial-group > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-md-4 {
+  display: inline-block;
+  float: none;
+}
+
+.testimonial-group > .row > .col-md-6 {
+  display: inline-block;
+  float: none;
 }
 
 hr {
     border: 0;
-    height: 4px;
+    height: 3px;
     background: #333;
 }
 
 span {
     font-weight: 600;
+    line-height: 16px;
 }
 
 .centeralign {
@@ -201,7 +214,7 @@ span {
     font-family: "aktiv-grotesk", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 60px;
     letter-spacing: 0px;
     margin-top: 0px;  
     line-height: 1;
@@ -211,8 +224,7 @@ span {
 font-family: "aktiv-grotesk", sans-serif;
 font-style: normal;
 font-weight: 600;
-font-size: 34px;
-    line-height: 1;
+font-size: 30px;
     letter-spacing: 0px;
 }
 
@@ -222,7 +234,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 21px;
     letter-spacing: 0px;
-    line-height: 1;
 }
 
 .title {
@@ -232,8 +243,8 @@ font-style: normal;
 
 .block {
     border-left-style: solid;
-    border-left-width: 4px;
-    padding-left: 20px;
+    border-left-width: 3px;
+    padding-left: 60px;
    }
 
 .navbar-collapse.in {
@@ -251,10 +262,10 @@ font-style: normal;
 .carousel-indicators > li.active{
     border: 1;
     border-color: transparent;
-    margin: 0 5px;
-    height: 4px;
-    border-radius: 5;
-    width: 80px;
+    margin: 0 6px;
+    height: 3px;
+    border-radius: 6;
+    width: 60px;
     
     
   }
@@ -301,65 +312,25 @@ font-style: normal;
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768) { 
-     body {
-        background: red;
+    .row-space2x {
+        padding-top: 2px;
     }
+
 }
 
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .custom-row {
-        margin-bottom: 350px
-    }
     
-    .custom-mac {
-        height: 500px;
-    }
-    .img {
-    height: 700px;
-    background: url(../images/dawgdeals_3.png) no-repeat fixed 100%; margin-bottom:0px; background-size:contain;
-}
-    .header > h1 {
-        margin-top: 50px
-    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1280px) {  
-    .custom-row {
-        margin-bottom: 450px
-    }
-    .img {
-    height: 700px;
-    background: url(../images/dawgdeals_3.png) no-repeat fixed 100%; margin-bottom:0px; background-size:contain;
-}
-        .header > h1 {
-        margin-top: 100px
-    }
-    
-    .header > p {
-        margin-top: 100px;
-    }
+
 }
 
 @media (min-width: 1680px) {  
-    .custom-row {
-        margin-bottom: 625px
-    }
-    .custom-mac {
-        height: 800px;
-    }
-    .img {
-    height: 700px;
-    background: url(../images/dawgdeals_3.png) no-repeat fixed 100%; margin-bottom:0px; background-size:contain;
-}
-            .header > h1 {
-        margin-top: 250px
-    }
-        .header > p {
-        margin-top: 100px;
-    }
+
 }
 
 @media (min-width: 768px) {
