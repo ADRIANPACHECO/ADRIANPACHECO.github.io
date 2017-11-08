@@ -135,25 +135,26 @@ header {
 
 .navbar {
     background-color: transparent;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 
 .navbar .navbar-brand {
     color: #333;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .navbar .navbar-right > li > a {
     color: #333;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
 
 }
 
 .navbar .navbar-right > li > a:hover {
     color: #333;
-    font-weight: 600;
     
 }
 
@@ -217,7 +218,7 @@ span {
     font-size: 60px;
     letter-spacing: 0px;
     margin-top: 0px;  
-    line-height: 1;
+    line-height: 1.1;
 }
 
 .font {
@@ -293,6 +294,9 @@ font-style: normal;
 .carousel-fade .carousel-inner > .item.active.left {
     transform: translate3d(0, 0, 0);
 }
+
+
+
 
 
 /*
