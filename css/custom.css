@@ -1,37 +1,35 @@
 body {
-    background-color: #F2F2F2;
+/*    background-color: #F2F2F2;#e0dcd5;*/
+    background-color: #faf5f0;
     font-family: "aktiv-grotesk", sans-serif;
     font-style: normal;
     letter-spacing: 1px;
-    font-weight:200;
-    color: #333; 
+    color: black; 
 }
 
 h1 {
     word-break: break-all;
 }
 
-/*Subject to change depending on selected font*/
-h4 {
-    color: #222;
-}
-
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
-    text-decoration: NONE;
+    text-decoration: none;
+    color: #e0dcd5; 
 }
 
 
 p {   
     font-size: 16px;
     font-style: normal;
+    font-weight: 300;
 }   
 
 .spacing {
-    line-height: 25px;
+    line-height: 24px;
 }
 
 
@@ -43,6 +41,12 @@ p {
 .row-space2x {
     padding-top: 75px;
 }
+
+.row-space3 {
+    padding-bottom: 75px;
+
+}
+
 
 .row-spaceX {
     padding-top: 75px; padding-bottom: 75px;
@@ -73,7 +77,7 @@ p {
     background-size: contain;
 }
 
-header { 
+.header { 
     height: 100vh;
     display: flex;
     flex-direction: column; 
@@ -131,30 +135,55 @@ header {
 }
 
 
-/* Navbar elements */
+
+/* NAVBAR */
 
 .navbar {
     background-color: transparent;
-    padding-top: 20px;
+    padding: 40px;
+    padding-bottom: 0px;
+
+}
+
+.nav-item  {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.nav-item > .nav-link {
+    color: black;
+
+}
+
+.navbar-nav > li.active > a {
+   color: black;
 }
 
 
-.navbar .navbar-brand {
-    color: #333;
-    font-size: 16px;
-    font-weight: 600;
+.fa-volume-up {
+    color: #e0dcd5;
 }
+
+.fa-volume-up:hover {
+    color: black;
+}
+
+.fa-volume-up-on {
+    color: black;
+}
+
+
 
 .navbar .navbar-right > li > a {
-    color: #333;
+    color: black;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
 
 }
 
 .navbar .navbar-right > li > a:hover {
-    color: #333;
+    text-decoration: underline;
     
 }
 
@@ -178,8 +207,8 @@ header {
   background: transparent !important; /*Whatever colour you want for background */
 }
 .container-fluid {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .testimonial-group > .row {
@@ -196,6 +225,25 @@ header {
   float: none;
 }
 
+.testimonial-group2 > .row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
+.testimonial-group2 > .row > .col-10 {
+    flex: 0 0 auto;
+}
+
+.testimonial-group2 > .row > .col-6 {
+    flex: 0 0 auto;
+}
+
+.testimonial-group2 > .row > .col-4 {
+    flex: 0 0 auto;
+}
+
+
 hr {
     border: 0;
     height: 3px;
@@ -207,6 +255,7 @@ span {
     line-height: 16px;
 }
 
+
 .centeralign {
     text-align: center;
 }
@@ -214,38 +263,59 @@ span {
 .center {
     font-family: "aktiv-grotesk", sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
+    font-weight: 500;
+    font-size: 40px;
     letter-spacing: 0px;
-    margin-top: 0px;  
-    line-height: 1.1;
+    line-height: 40px;
 }
 
 .font {
 font-family: "aktiv-grotesk", sans-serif;
 font-style: normal;
-font-weight: 600;
-font-size: 30px;
+font-weight: 500;
+font-size: 28px;
     letter-spacing: 0px;
+    line-height: 32px;
+    
 }
 
 .titlebold {
 font-family: "aktiv-grotesk", sans-serif;
 font-style: normal;
-font-weight: 600;
-font-size: 21px;
-    letter-spacing: 0px;
+font-weight: 400;
+font-size: 20px;
+    letter-spacing: 0px;  
 }
 
-.title {
+.link {
+font-family: "aktiv-grotesk", sans-serif;
 font-style: normal;
-    font-size: 28px; 
+font-weight: 500;
+font-size: 14px;    
+  
+}
+.link > a {
+    color: #e0dcd5;
+}
+
+.link > a:hover {
+    color: black;
+}
+
+.parallax {
+
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .block {
-    border-left-style: solid;
-    border-left-width: 3px;
-    padding-left: 60px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    padding-bottom: 50px;
    }
 
 .navbar-collapse.in {
@@ -271,15 +341,17 @@ font-style: normal;
     
   }
 
-.carousel-fade .carousel-inner > .item {
+
+/*
+.carousel-fade .carousel-inner > .carousel-item {
     transition-property: opacity;
 }
-.carousel-fade .carousel-inner > .item,
-.carousel-fade .carousel-inner > .item.active.left {
+.carousel-fade .carousel-inner > .carousel-item,
+.carousel-fade .carousel-inner > .carousel-item.active.left {
     opacity: 0;
 }
-.carousel-fade .carousel-inner > .item.active,
-.carousel-fade .carousel-inner > .item.next.left {
+.carousel-fade .carousel-inner > .carousel-item.active,
+.carousel-fade .carousel-inner > .carousel-item.next.left {
     opacity: 1;
 }
 .carousel-fade .carousel-inner > .next,
@@ -288,13 +360,13 @@ font-style: normal;
 .carousel-fade .carousel-inner > .active.right {
     left: 0;
 }
-.carousel-fade .carousel-inner > .item.next,
-.carousel-fade .carousel-inner > .item.active.right,
-.carousel-fade .carousel-inner > .item.prev,
-.carousel-fade .carousel-inner > .item.active.left {
-    transform: translate3d(0, 0, 0);
+.carousel-fade .carousel-inner > .carousel-item.next,
+.carousel-fade .carousel-inner > .carousel-item.active.right,
+.carousel-fade .carousel-inner > .carousel-item.prev,
+.carousel-fade .carousel-inner > .carousel-item.active.left {
+    transform: translate3d(1, 0, 0);
 }
-
+*/
 
 
 
@@ -311,33 +383,36 @@ font-style: normal;
 }
 */
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
 
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 768) { 
-    .row-space2x {
-        padding-top: 2px;
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .center {
+        font-family: "aktiv-grotesk", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        letter-spacing: 0px;
+        line-height: 60px;
     }
 
 }
 
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1280px) {  
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
 
 }
 
-@media (min-width: 1680px) {  
-
-}
-
-@media (min-width: 768px) {
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
 
 }
 
