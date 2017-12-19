@@ -48,7 +48,8 @@ Something About Us ©
 </head>
     
     <body>
-        
+        <audio id="myAudio" src="/images/Something%20About%20Us%203.mp3" preload="auto">
+</audio>
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/index.html"><img src="/images/aplogo.png" width="80"></a>
             
@@ -66,6 +67,35 @@ Something About Us ©
               </li>
               <li class="nav-item">
                 <a class="nav-link hvr-float" href="mailto:adrianpachecodesign@gmail.com" style="color: #e0dcd5;">CONTACT</a>
+            </ul>
+              <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" id="audioSwitch" onClick="togglePlay()" href="#"><i class="fa fa-volume-up fa-2x" aria-hidden="true"></i></a>
+                  <script>
+                      
+                    var myAudio = document.getElementById("myAudio");
+                    var isPlaying = false;
+
+                    function togglePlay() {
+                      if (isPlaying) {
+                        myAudio.pause()
+                      } else {
+                        myAudio.play();
+                      }
+                    };
+                    myAudio.onplaying = function() {
+                      isPlaying = true;
+                    };
+                    myAudio.onpause = function() {
+                      isPlaying = false;
+                    };
+                      
+                                  $('.fa-volume-up').click(function(){
+              $(this).toggleClass('fa-volume-up-on');
+            });
+                  
+                  
+                  </script>
             </ul>
           </div>
         </nav>

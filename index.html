@@ -51,9 +51,6 @@ Something About Us ©
     <body>
         
         
-                          <audio id="myAudio" src="/images/Something%20About%20Us%203.mp3" preload="auto">
-</audio>
-        
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/index.html"><img src="/images/aplogo.png" width="80"></a>
             
@@ -72,35 +69,6 @@ Something About Us ©
               <li class="nav-item">
                 <a class="nav-link hvr-float" href="mailto:adrianpachecodesign@gmail.com">CONTACT</a>
             </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" id="audioSwitch" onClick="togglePlay()" href="#"><i class="fa fa-volume-up fa-2x" aria-hidden="true"></i></a>
-                  <script>
-                      
-                    var myAudio = document.getElementById("myAudio");
-                    var isPlaying = false;
-
-                    function togglePlay() {
-                      if (isPlaying) {
-                        myAudio.pause()
-                      } else {
-                        myAudio.play();
-                      }
-                    };
-                    myAudio.onplaying = function() {
-                      isPlaying = true;
-                    };
-                    myAudio.onpause = function() {
-                      isPlaying = false;
-                    };
-                      
-                                  $('.fa-volume-up').click(function(){
-              $(this).toggleClass('fa-volume-up-on');
-            });
-                  
-                  
-                  </script>
-            </ul>
           </div>
         </nav>
         
@@ -116,12 +84,14 @@ Something About Us ©
         
                 <div class="testimonial-group2" style="cursor: url(/images/cursor_img.png), auto">
         <div class="row row-spaceX"><div class="col-1"></div>
+            <div class="col-10"><a href="/pages/messercreations.html" style="cursor: url(images/cursor_img.png), auto"><img class="img-fluid" src="/images/messercreations_portfolio-02.png"></a><p class="link text-center" style="color: #e0dcd5">MESSER CREATIONS</p></div><div class="col-1"></div>
             <div class="col-10"><a href="/pages/safely.html" style="cursor: url(images/cursor_img.png), auto"><img class="img-fluid" src="/images/safely_preview.png"></a><p class="link text-center" style="color: #e0dcd5">SAFELY</p></div><div class="col-1"></div>
             <div class="col-10"><a href="/pages/udsm.html" style="cursor: url(images/cursor_img.png), auto"><img class="img-fluid" src="/images/udsm_preview.png"></a><p class="link text-center" style="color: #e0dcd5">UNIVSERITY DISTRICT STREET MEDICINE</p></div>
             <div class="col-10"><img class="img-fluid" src="/images/beyond_preview.png" style="cursor:not-allowed "><p class="link text-center" style="color: #e0dcd5">BEYOND</p></div><div class="col-1"></div>
             
             </div>
      </div>
+            <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"90a66b05e664f2250b76e0905","lid":"d715283b9e"}) })</script>
         
         </div>
 
