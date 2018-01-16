@@ -19,7 +19,8 @@ Something About Us ©
     
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.typekit.net/hpt1zhm.css">
         <link rel="icon" href="/images/favicon.png"  sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="/images/icon_apple_retina.png">
@@ -49,7 +50,60 @@ Something About Us ©
 </head>
     
     <body>
+        <audio id="myAudio" src="/images/Something%20About%20Us%203.mp3" preload="auto">
+</audio>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/index.html"><img src="/images/aplogo.png" width="100"></a>
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+            
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link hvr-float" href="/index.html">HOME<span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link hvr-float" href="/pages/about.html">ABOUT<span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link hvr-float" href="https://medium.com/@adrianpacheco__" target="_blank">JOURNAL</a>
+              </li>
+              <li class="nav-item ml-3">
+                  <a class="nav-link hvr-float" href="mailto:adrianpachecodesign@gmail.com" >CONTACT</a></li>
+                <li class="nav-item ml-3">
+                  <a class="nav-link" id="audioSwitch" onClick="togglePlay()" href="#"><i class="fas fa-volume-up fa-lg" aria-hidden="true"></i></a>
+                  <script>
+                      
+                    var myAudio = document.getElementById("myAudio");
+                    var isPlaying = false;
+
+                    function togglePlay() {
+                      if (isPlaying) {
+                        myAudio.pause()
+                      } else {
+                        myAudio.play();
+                      }
+                    };
+                    myAudio.onplaying = function() {
+                      isPlaying = true;
+                    };
+                    myAudio.onpause = function() {
+                      isPlaying = false;
+                    };
+                      
+                                  $('.fa-volume-up').click(function(){
+              $(this).toggleClass('fa-volume-up-on');
+            });
+                  
+                  
+                  </script></li>
         
+          </div>
+        </nav>
+        
+<!--
         
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/index.html"><img src="/images/aplogo.png" width="80"></a>
@@ -59,9 +113,9 @@ Something About Us ©
           </button>
             
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link hvr-float" href="/pages/about.html" >ABOUT</a>
+                <a class="nav-link hvr-float" href="/pages/about.html">ABOUT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link hvr-float" href="https://medium.com/@adrianpacheco__" target="_blank">JOURNAL</a>
@@ -71,32 +125,58 @@ Something About Us ©
             </ul>
           </div>
         </nav>
+-->
         
         
         <div class="container-fluid animated slideInUp">
+            <div class="row row-spaceX"><div class="col-sm-1"></div>
+                <div class="col-sm-2" style="padding: 15% 0;"><p class="font">Designing simple digital products for growing brands.  </p></div><div class="col-sm-1"></div>
+                <div class="col-sm-7"><a href="/pages/messercreations.html" ><img class="img-fluid" src="/images/messerCreationsHome.png"></a></div>
+            </div>
+                        <div class="row row-spaceX"><div class="col-sm-1"></div>
+                <div class="col-sm-3"><a href="/pages/safely.html" ><img class="img-fluid" src="/images/safelyiPhoneHome2.png"></a></div>
+                <div class="col-sm-3"><a href="/pages/safely.html" ><img class="img-fluid" src="/images/safelyiPhoneHome.png"></a></div>
+            </div>
+                        <div class="row row-spaceX">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8"><a href="/pages/udsm.html" ><img class="img-fluid" src="/images/udsmHome.png"></a></div>
+            </div>
+                                 <div class="row row-spaceX"><div class="col-sm-1"></div>
+            
+                <div class="col-sm-6"><img style="cursor:not-allowed "  class="img-fluid" src="/images/beyondHome.png"></div>
+            </div>
+<!--
             <div class="row" style="padding-top: 200px">
-                <div class="col-1"></div>
+                <div class="col-2"></div>
                 <div class="col-8">
                     <p class="link">ADRIAN PACHECO</p>
                     <p class="center">Designing simple digital products for growing brands.  </p>
                 </div>
             </div>
+-->
         
+<!--
                 <div class="testimonial-group2" style="cursor: url(/images/cursor_img.png), auto">
-        <div class="row row-spaceX"><div class="col-1"></div>
-            <div class="col-10"><a href="/pages/messercreations.html" style="cursor: url(images/cursor_img.png), auto"><img class="img-fluid" src="/images/messercreations_portfolio-02.png"></a><p class="link text-center" style="color: #e0dcd5">MESSER CREATIONS</p></div><div class="col-1"></div>
-            <div class="col-10"><a href="/pages/safely.html" style="cursor: url(images/cursor_img.png), auto"><img class="img-fluid" src="/images/safely_preview.png"></a><p class="link text-center" style="color: #e0dcd5">SAFELY</p></div><div class="col-1"></div>
-            <div class="col-10"><a href="/pages/udsm.html" style="cursor: url(images/cursor_img.png), auto"><img class="img-fluid" src="/images/udsm_preview.png"></a><p class="link text-center" style="color: #e0dcd5">UNIVSERITY DISTRICT STREET MEDICINE</p></div>
-            <div class="col-10"><img class="img-fluid" src="/images/beyond_preview.png" style="cursor:not-allowed "><p class="link text-center" style="color: #e0dcd5">BEYOND</p></div><div class="col-1"></div>
+        <div class="row row-spaceX"><div class="col-1"></div><div class="col-3" style="padding: 15% 0;">
+                
+                    <p class="font">Designing simple digital products for growing brands.  </p>
+                </div>
+            <div class="col-8"><a href="/pages/messercreations.html" style="cursor: url(images/cursor_img.png), auto"><img class="img-fluid" src="/images/messercreations_portfolio-02.png"></a></div><div class="col-1"></div>
+            <div class="col-8"><a href="/pages/safely.html"><img class="img-fluid" src="/images/safely_preview.png"></a></div><div class="col-1"></div>
+            <div class="col-8"><a href="/pages/safely.html"><img class="img-fluid" src="/images/udsm_preview.png"></a></div>
+            <div class="col-8"><img class="img-fluid" src="/images/beyond_preview.png" style="cursor:not-allowed "></div><div class="col-1"></div>
             
             </div>
      </div>
+-->
         
         </div>
 
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+            
+
     
 </body>
     

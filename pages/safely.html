@@ -19,7 +19,7 @@ Something About Us ©
     
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/hpt1zhm.css">
     <link rel="icon" href="/images/favicon.png"  sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="/images/icon_apple_retina.png">
@@ -51,204 +51,197 @@ Something About Us ©
     
     <body>
         
+                <audio id="myAudio" src="/images/Something%20About%20Us%203.mp3" preload="auto">
+</audio>
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="/index.html"><img src="/images/aplogo.png" width="80"></a>
+          <a class="navbar-brand" href="/index.html"><img src="/images/aplogo.png" width="100"></a>
             
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
           </button>
             
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link hvr-float" href="/pages/about.html" >ABOUT<span class="sr-only">(current)</span></a>
-              </li>
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
+                <a class="nav-link hvr-float" href="/index.html">HOME<span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link hvr-float" href="/pages/about.html" >ABOUT<span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item ml-3">
                 <a class="nav-link hvr-float" href="https://medium.com/@adrianpacheco__" target="_blank">JOURNAL</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-float" href="mailto:adrianpachecodesign@gmail.com" >CONTACT</a>
-            </ul>
+              <li class="nav-item ml-3">
+                  <a class="nav-link hvr-float" href="mailto:adrianpachecodesign@gmail.com" >CONTACT</a></li>
+                <li class="nav-item ml-3">
+                  <a class="nav-link" id="audioSwitch" onClick="togglePlay()" href="#"><i class="fas fa-volume-up fa-lg" aria-hidden="true"></i></a>
+                  <script>
+                      
+                    var myAudio = document.getElementById("myAudio");
+                    var isPlaying = false;
+
+                    function togglePlay() {
+                      if (isPlaying) {
+                        myAudio.pause()
+                      } else {
+                        myAudio.play();
+                      }
+                    };
+                    myAudio.onplaying = function() {
+                      isPlaying = true;
+                    };
+                    myAudio.onpause = function() {
+                      isPlaying = false;
+                    };
+                      
+                                  $('.fa-volume-up').click(function(){
+              $(this).toggleClass('fa-volume-up-on');
+            });
+                  
+                  
+                  </script></li>
+        
           </div>
         </nav>
     
-
-
-    <div class="container-fluid animated slideInUp">
-        <div class="row" style="padding-top: 200px">
-            <div class="col-sm-1"></div>
+    <div class="container-fluid animated slideInUp row-space3">
+       <div class="row row-space2x" style="text-align: center">
+                <div class="col-sm-12"><p class="center">Safely</p><p class="link" style="color: #e9d5ca;">INFORMING PEOPLE ABOUT UNSAFE SITUATIONS WITH REAL-TIME CRIME DATA</p></div>
+        </div>
+        
+        <div class="row row-space">
+                    
+                        <div class="col-sm-12">
             
+        <img class="img-fluid" src="/images/safely.png" alt="Adrian Pacheco">
+            </div>
+                
+        </div>
+        
+               <div class="row row-space2x"><div class="col-sm-3">
+            </div>
             <div class="col-sm-6">
-            <p class="center">Safely</p>
-            <p class="link">USER EXPERIENCE DESIGN, USER INTERFACE DESIGN</p>
-                    </div>  
-            <div class="col-sm-4">
-            <p class="font">Informing people about unsafe situations with real-time crime data.</p>
-                    </div> 
-
+                
+                <p class="font">Over the course of 20 weeks, our team of UX Designers created an iOS application that aims to preemptively inform users of dangerous situations before they enter the physical proximity of danger. We did this by using real-time data from community-submitted incidents and from Seattle Police Department historical crime logs.</p>
+            </div>
         </div>
-
-                    <div class="row row-space">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-11">
+                                    <div class="row row-space2x">
+            <div class="col-sm-6">
             
-        <img class="img-fluid" src="/images/safely_home.png" alt="Adrian Pacheco">
+        <img class="img-fluid" src="/images/safelyHand.png" alt="Adrian Pacheco">
+            
+            </div>
+                                <div class="col-sm-6">
+            
+        <img class="img-fluid" src="/images/safelyHand2.png" alt="Adrian Pacheco">
+            
             </div>
                 
         </div>
-        <div class="row row-space2x"><div class="col-sm-7">
+        
+
+                <div class="row row-space2x">
+                    <div class="col-sm-4"></div>
+        
+        <div class="col-sm-4" >
+                <p class="font" style="text-align: center">The Challenge</p><p class="spacing" style="text-align: justify"> Being in a large city, Seattle is home to a lot of crime. Currently, there is no reliable way for someone to know whether an area is safe without going in-person and investigating.</p>
+
             </div>
-            <div class="col-sm-4">
-                
-                <p class="font">Over the course of 20 weeks, our team was able to design and build an iOS application that aims to preemptively inform users of dangerous situations before they enter the physical proximity of danger using real-time data from community-submitted incidents and Seattle Police Department historical crime logs.</p>
+        
+        </div>
+        <div class="row row-space2x">
+            <div class="col-sm-4"></div>
+                       <div class="col-sm-4" >
+                <p class="font" style="text-align: center">Our Approach</p><p class="spacing" style="text-align: justify">We spent the first 10-weeks conducting research through user surveys, producing a competitive analysis, and creating storyboards. Additionally, we created a comprehensive design blueprint consisting of a mood board, wireframes, prototypes, and design specifications. The remaining 10-weeks consisted of user testing and iOS app development. </p>
+
             </div>
+        
+
         </div>
 
-                <div class="row row-space">
-                        <div class="col-sm-1">
-            </div>
-     <div class="col-sm-4" >
-                <p class="font">The Challenge</p><p class="spacing"> Being in a large city, Seattle is home to a lot of crime. Currently, there is no reliable way for someone to know whether an area is safe without going in-person and investigating.</p>
 
-            </div>
-
-        </div>
-                <div class="row row-space"><div class="col-sm-7"></div>
-                    <div class="col-sm-4">
-                <p class="font">Our Approach</p>
-                <p class="spacing">We spent the first 10-weeks conducting research through user surveys, producing a competitive analysis, and creating storyboards. Additionally, we created a comprehensive design blueprint consisting of a mood board, wireframes, prototypes, and design specifications. The remaining 10-weeks consisted of user testing and iOS app development. </p>
-            </div>
-
-        </div>
-                <div class="row row-space">
-                        <div class="col-sm-1">
+                <div class="row row-space2x">
+                        <div class="col-sm-4">
             </div>
             <div class="col-sm-4" >
-                <p class="font">My Role</p>
-                <p class="spacing">I was responsible for the experience strategy and design of the iOS application. I primarily led our team through the UI design process while assisting with related UX works from January to June 2017. </p>
+                <p class="font" style="text-align: center">My Role</p>
+                <p class="spacing" style="text-align: justify">I was responsible for the experience strategy and design of the iOS application. I primarily led our team through the UI design process while assisting with related UX works from January to June 2017. </p>
             </div> 
         </div>
-                            <div class="row row-space2x"><div class="col-sm-1"></div>
-            <div class="col-sm-11">
-            
-        <img class="img-fluid" src="/images/safely_bike.png" alt="Adrian Pacheco">
-            
             </div>
-                
-        </div>
-        <div class="row row-space">  <div class="col-sm-1">
-            </div>
-            <div class="col-sm-11">
             
-        <img class="img-fluid" src="/images/safely_mockupindoor.png" alt="Adrian Pacheco">
-            
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+        <img class="img-fluid" src="/images/SafelyiPhoneX1@2x.png" alt="Adrian Pacheco">
             </div>
-                
-        </div>
+            <div class="container-fluid row-space3">
         
-        
-        <div class="row row-space2x">
-            <div class="col-sm-1"></div>
-                    
-            <div class="col-sm-5">
-            <p class="font">What Does Safety Mean To You?</p>
-                <p class="spacing">We designed and sent out a Google survey to various family, friends, and coworkers via convenience sampling to gain a better understanding of our users’ safety habits. Some participants were also briefly interviewed afterward to elaborate on some of their responses. </p><br>
-                <p class="spacing">We wanted to know more about how our users perceived their safety living in Seattle and to learn more about what current devices or strategies they used to protect themselves while commuting. After coding and analyzing our results, we came up with the following conclusions that validated and provided insight for some of our initial assumptions: </p>
-                    </div> 
             
-
-        </div>
+        
+                   <div class="row row-spaceX">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+        <p class="font">What Does Safety Mean To You?</p>
+                    <p class="spacing" style="text-align: justify">We designed and sent out a Google survey to various family, friends, and coworkers via convenience sampling to gain a better understanding of our users’ safety habits. Some participants were also briefly interviewed afterward to elaborate on some of their responses. We wanted to know more about how our users perceived their safety living in Seattle and to learn more about what current devices or strategies they used to protect themselves while commuting. After coding and analyzing our results, we came up with the following conclusions that validated and provided insight for some of our initial assumptions: </p>
+                </div>
+                
+            </div>
         
         
         <div class="row row-spaceX">
-                        <div class="col-sm-2">
+                        <div class="col-sm-3">
             </div>
-            <div class="col-sm-4 " ><p class="center">01</p>
-                <p class="font">Users feel less safe when walking alone, in the dark, or in unfamiliar areas.</p>
+            <div class="col-sm-3 " ><p class="center">01</p>
+                <p class="font2">Users feel less safe when walking alone, in the dark, or in unfamiliar areas.</p>
             </div>
-            <div class="col-sm-4"><p class="spacing">This was an assumption that our team initially made at the start of our project and were not surprised by the nearly unanimous response set we received after asking our users to describe what circumstances they felt less/safer. Several participants also commented feeling safer when they were walking with a male friend while others commented that they consciously made an effort not to use their phone or take it out of their pockets while walking. </p></div>
+            <div class="col-sm-5"><p class="spacing" style="text-align: justify">This was an assumption that our team initially made at the start of our project and were not surprised by the nearly unanimous response set we received after asking our users to describe what circumstances they felt less/safer. Several participants also commented feeling safer when they were walking with a male friend while others commented that they consciously made an effort not to use their phone or take it out of their pockets while walking. </p></div>
         </div>
 
                 <div class="row row-spaceX">
-                        <div class="col-sm-2">
+                        <div class="col-sm-3">
             </div>
-            <div class="col-sm-4" ><p class="center">02</p>
-                <p class="font">“Safety” means both physical and mental well-being.</p>
-            </div>      <div class="col-sm-4">
-                        <p class="spacing">When asked “What does safety mean to you?” we received very similar responses related to the users’ desire to be physically out of harm’s way and also having peace of mind and not having to worry about being harmed, targeted, or assaulted. Users used phrases like “feeling confident, not worried”, “not having to question my personal well-being”, “absence of fear”, and “not having to worry about being harmed”.  </p>
+            <div class="col-sm-3" ><p class="center">02</p>
+                <p class="font2">“Safety” means both physical and mental well-being.</p>
+            </div>      <div class="col-sm-5">
+                        <p class="spacing" style="text-align: justify">When asked “What does safety mean to you?” we received very similar responses related to the users’ desire to be physically out of harm’s way and also having peace of mind and not having to worry about being harmed, targeted, or assaulted. Users used phrases like “feeling confident, not worried”, “not having to question my personal well-being”, “absence of fear”, and “not having to worry about being harmed”.  </p>
                     </div>
         </div>
         
                         <div class="row row-spaceX">
-                        <div class="col-sm-2">
+                        <div class="col-sm-3">
             </div>
-            <div class="col-sm-4 " ><p class="center">03</p>
-                <p class="font">Young adults DO care about their safety.</p>
+            <div class="col-sm-3 " ><p class="center">03</p>
+                <p class="font2">Young adults DO care about their safety.</p>
             </div>
-                            <div class="col-sm-4"><p class="spacing">38% of the participants felt like Seattle was a relatively safe city in comparison to other cities in the country and about half the participants responded they sometimes walked by themselves and sometimes with other people.</p><p class="link" style="padding-top: 20px;"> <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">READ MORE </a></p></div>
+                            <div class="col-sm-3"><p class="spacing" style="text-align: justify">38% of our participants felt Seattle was a relatively safe city in comparison to other cities in the country. 53 participants said they regularly use emergency services such as UW Alerts, Husky Night Ride, as well as calling and messaging a friend during a commute.</div>
 
         </div>
-                                <div class="collapse"  id="collapseExample">
-                                    <div class="row row-space">
-                                    <div class="col-sm-1"></div>
-                        <div class="col-sm-4">
-                            <p class="link">WE ASKED,</p><p class="font">"How important is safety to you?"</p><p class="link">AND 55 RESPONDED.</p>
-            </div>
-        
-                            <div class="col-sm-6"><img src="/images/safely_research_charts-03.png" class="img-fluid"></div>
-                                    </div>
-                                    
-                                    <div class="row row-spaceX">
-                                        <div class="col-sm-1">
-                                        
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="link">WE ALSO ASKED,</p><p class="font">"Which safety or emergency services do you use?"</p><p class="link">AND 53 RESPONDED.</p>
-                                        
-                                        </div>
-                                        <div class="col-sm-6">
-                                 <img class="img-fluid" src="/images/safely_research_charts-02-02.png">
-                                    </div>
-            
-                    </div>
-        </div>
+                               
         <div class="row row-spaceX">
-                        <div class="col-sm-2">
+                        <div class="col-sm-3">
             </div>
-            <div class="col-sm-4 " ><p class="center">04</p>
-                <p class="font">UW Alerts is highly subscribed to, however, many participants felt like it is underutilized and often too vague.</p>
+            <div class="col-sm-3 " ><p class="center">04</p>
+                <p class="font2">UW Alerts is highly subscribed to, however, many participants felt like it is underutilized and often too vague.</p>
             
         </div>
-            <div class="col-sm-4"><p class="spacing">Interviewing our participants about UW Alerts validated some of our previous assumptions about their frustrations with the current system. Many participants mentioned only receiving ‘vague’ statements from UWPD hours or days after incidents, or not receiving alerts at all about “smaller” incidents like assault, robbery, or theft. None of our participants responded hearing about an incident as it was happening, and only 16.4% said they heard about it minutes after. Despite this, many of our interviewed participants expressed a desire for knowing this information in real-time.</p><p class="link" style="padding-top: 20px;"> <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">READ MORE </a></p></div>
+            <div class="col-sm-5"><p class="spacing" style="text-align: justify">Interviewing our participants about UW Alerts validated some of our previous assumptions about their frustrations with the current system. Many participants mentioned only receiving ‘vague’ statements from UWPD hours or days after incidents, or not receiving alerts at all about “smaller” incidents like assault, robbery, or theft. None of our participants responded hearing about an incident as it was happening, and only 16.4% said they heard about it minutes after. Despite this, many of our interviewed participants expressed a desire for knowing this information in real-time.</p></div>
         </div>
         
-        <div class="collapse"  id="collapseExample2">
-                                    <div class="row row-space">
-                                    <div class="col-sm-1"></div>
-                        <div class="col-sm-4">
-                            <p class="link">WE ASKED,</p><p class="font">"If a crime or emergency has occurred, where do you typically learn about it first?"</p><p class="link">AND 55 RESPONDED.</p>
-            </div>
-        
-                            <div class="col-sm-6"><img class="img-fluid" src="/images/safely_research_charts-04.png"></div>
-                                    </div>
-                                    
-                                    <div class="row row-spaceX">
-                                        <div class="col-sm-1">
-                                        
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <p class="link">WE ALSO ASKED,</p><p class="font">"If a crime or emergency has occurred, how soon after do you hear about it?"</p><p class="link">AND 53 RESPONDED.</p>
-                                        
-                                        </div>
-                                        <div class="col-sm-6">
-                                 <img class="img-fluid" src="/images/safely_research_charts-05.png">
-                                    </div>
+
             
-                    </div>
-        </div>
+        
+                   <div class="row row-space2x">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <p class="font">Discovering Our Users</p>
+        
+                    <p class="spacing" style="text-align: justify">Based on our survey data, we were able to focus on who we are designing for along with who we are not designing for by designating persona types that carefully aligned with our product vision. Originally, our targeted users evolved around commuters who rely on walking or biking as their primary mode of transportation. We soon realized that our product solution may go a step further and target Seattle tourists and local community members.</p>
+                </div>
+                
+            </div>
+<!--
 
         
-                        <div class="row row-space3">
+                        <div class="row row-spaceX">
                         <div class="col-sm-3 ">
             </div>
             <div class="col-sm-6" >
@@ -267,20 +260,21 @@ Something About Us ©
 
         </div>
         </div>
+-->
         
     </div>
         <div class="container-fluid" style="background: #1d2029; margin-left: 0px; margin-right: 0px;">
             
         <div class="row row-space2x">
-            <div class="col-sm-1"></div>
+           
                     
                                   
-                        <div class="col-sm-6">
-               <p class="center" style="color: #faf5f0">Competitive <br>Landscape</p>
+                        <div class="col-sm-12">
+               <p class="center" style="color: white; text-align: center">Competitive Landscape</p>
                     </div>                
         </div>
             
-                    <div class="row row-spaceX">
+                    <div class="row row-space">
                         <div class="col-sm-1">
             </div>
             <div class="col-sm-10 ">
@@ -289,14 +283,14 @@ Something About Us ©
         </div>
     
             <div class="row row-space2x">
-                                       <div class="col-sm-1"></div>
+                                 
 
-                        <div class="col-sm-6" >
-               <p class="center" style="color: #faf5f0">User Data <br>Collection Plan</p>
+                        <div class="col-sm-12" >
+               <p class="center" style="color: white; text-align: center">User Data Collection Plan</p>
                     </div>                
         </div>
         
-            <div class="row row-spaceX">
+            <div class="row row-space">
                         <div class="col-sm-1">
             </div>
             <div class="col-sm-10 ">
@@ -305,16 +299,16 @@ Something About Us ©
         </div>
             
             <div class="row row-space2x">
-                            <div class="col-sm-1"></div>
+                            
 
                                     
-                        <div class="col-sm-6">
-              <p class="center" style="color: #faf5f0">User Journey Map</p>
+                        <div class="col-sm-12">
+              <p class="center" style="color: white; text-align: center">User Journey Map</p>
                     </div>                
         </div>
             
 
-            <div class="row row-space2x">
+            <div class="row row-space1x">
                                                           <div class="col-sm-1">
             </div>
             <div class="col-sm-10 ">
@@ -326,46 +320,38 @@ Something About Us ©
     </div>
         
  <div class="container-fluid">
-                    <div class="row row-space2x">
-                   <div class="col-sm-1"></div>
+                    <div class="row row-spaceX">
+                
             
             
-            <div class="col-sm-6">
-               <p class="center">Designing The <br>User Interface</p>
+            <div class="col-sm-12">
+               <p class="center" style="text-align: center">User Interface Design</p>
                     </div>
                     
     
         </div>
-           <div class="row row-space2x">
-                <div class="col-sm-3"></div>
-                    <div class="col-sm-6">
-                        <p class="font">Creating An External Trigger</p>
-                        <p class="spacing">During the early stages of brainstorming and ideation, we spent some time understanding what makes apps like Uber, Snapchat, and Google Maps easy to use and navigate for first time users. We discovered that each of their primary function is presented to users almost immediately after the app opens, giving users an instant call to action. We decided to follow a similar concept by having a map view be the first thing a user sees when the Safely app opens. </p>
-                        <p class="link" style="padding-top: 20px;"> <a data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">READ MORE </a></p>
-                    </div>
-                    
-                
-            </div>
      
-             <div class="collapse"  id="collapseExample4">
-        <div class="row row-spaceX">
-<div class="col-sm-3"><img class="img-fluid" src="/images/Safely_sketch.JPG"></div>
-         <div class="col-sm-3"><img class="img-fluid" src="/images/Safely_sketch2.JPG"></div>
-         <div class="col-sm-3"><img class="img-fluid" src="/images/Safely_wireframe2.png"></div>
-         <div class="col-sm-3"><img class="img-fluid" src="/images/Safely_wireframe3.png"></div>
-        
-
-        </div>
-        </div>
-
-    <div class="row row-spaceX">
-                             <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <p class="font">Design Direction </p><p class="spacing">The design direction was inspired by Uber Design and its focus to simplify and improve customer lives with impactful design. With a strong desire in making a social impact, we worked hard to make a product that is minimal, simple, and accessible for all by design.
+     <div class="row">
+         <div class="col-sm-12"><img class="img-fluid" src="/images/safelyUI@2x.png"></div>
+     </div>
+           <div class="row row-spaceX">
+                <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <p class="font" style="text-align: center">Creating An External Trigger</p>
+                        <p class="spacing" style="text-align: justify">During the early stages of brainstorming and ideation, we spent some time understanding what makes apps like Uber, Snapchat, and Google Maps easy to use and navigate for first time users. We discovered that each of their primary function is accessible to users almost immediately after the app opens, giving users an instant call to action. We decided to follow a similar concept by having a map view be the first thing a user sees when the Safely app opens. </p>
+      
+                    </div> 
+<!--
+                           <div class="col-sm-4">
+                <p class="font">Design Direction </p><p class="spacing" style="text-align: justify">The design direction was inspired by Uber Design and its focus to simplify and improve customer lives with impactful design. With a strong desire in making a social impact, we worked hard to make a product that is minimal, simple, and accessible for all by design.
 </p><p class="link" style="padding-top: 20px;"> <a data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">READ MORE </a></p>
 
             </div>
-     </div>
+-->
+                
+            </div>
+<!--
+
      <div class="collapse"  id="collapseExample5">
         <div class="row row-spaceX">
             
@@ -385,84 +371,73 @@ Something About Us ©
                         
             </div>
            </div>
-     
-             <div class="testimonial-group2" style="cursor: url(/images/cursor_img.png), auto">
-        <div class="row row-space"><div class="col-1"></div>
-            <div class="col-4"><img class="img-fluid" src="/images/safely_index.png"></div>
-            <div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup9.png"></div>
-            <div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup6.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup12.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup7.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup10.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup13.png"></div>
-            
-            </div>
-     </div>
-                  <div class="testimonial-group2" style="cursor: url(/images/cursor_img.png), auto">
-        <div class="row row-space"><div class="col-1"></div>
-            <div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup1.png"></div>
-            <div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup2.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup5.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup3.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup10.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup4.png"></div><div class="col-4"><img class="img-fluid" src="/images/safely_iphonemockup11.png"></div>
-            
-            </div>
-     </div>
-     
-        
-            
-                <div class="row row-space2x">
-                    <div class="col-sm-3"></div>
-            
-            <div class="col-sm-6">
-            <p class="font">Plan, Walk, And Inform Safely</p><p class="spacing">Safely collects and uses data from users to display crime history, real-time incidents, and suggested routes to protect the Seattle community. </p><p class="link" style="padding-top: 20px;"> <a data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">READ MORE </a></p>
-                    </div>
-        </div>
-     <div class="collapse"  id="collapseExample6">
-             <div class="row row-spaceX"><div class="col-sm-6"><img src="/images/Web%201280%20%E2%80%93%207@2x.png" class="img-fluid">
-                 </div><div class="col-sm-6"><img src="/images/Web%201280%20%E2%80%93%208@2x.png" class="img-fluid">
-            </div>
-        </div>
-                      <div class="row row-space"><div class="col-sm-6"><img src="/images/Web%201280%20%E2%80%93%209@2x.png" class="img-fluid">
-                 </div><div class="col-sm-6"><img src="/images/Web%201280%20%E2%80%93%2010@2x.png" class="img-fluid">
-            </div>
-        </div>
-             <div class="row row-space"><div class="col-sm-3"></div>
-            <div class="col-sm-6" ><img class="img-fluid" src="/images/Web%201280%20%E2%80%93%2012@2x.png">
-            </div>
-    
-     </div>
-     
-
-        </div>
+-->
                 
-
-        
-         <div class="row row-space2x">
-                   <div class="col-sm-1"></div>
+</div>
+            
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+        <img class="img-fluid" src="/images/SafelyiPhoneX2@2x.png" alt="Adrian Pacheco">
+            </div>
+            <div class="container-fluid row-space3">
+                <div class="row row-space2x">
+                    <div class="col-sm-1"></div>
+            
             
             
             <div class="col-sm-6">
-               <p class="center">Building A Habit-Forming Product</p>
+               <p class="center">Emotional Design</p>
+                    </div>
+                     <div class="col-sm-4">
+               <p class="font">Visceral Design</p><p class="spacing" style="text-align: justify">This type of emotional design is what motivated me to take on the role as the UI designer from the start of the project. I wanted to challenge myself to create a quality experience that looked and felt easy to use for first-time users by emphasizing concepts of minimalism. Successfully doing so would highlight the importance of Safely's data and core functionalities.</p>
+                    </div>
+                    
+    
+        </div>
+            
+                 <div class="row row-space2x">
+                        <div class="col-sm-1">
+            </div>
+            <div class="col-sm-5" >
+                <p class="font">Behavioral Design</p><p class="spacing" style="text-align: justify">As much as I wanted to design a visually appealing app, I also knew it was important to create a functional user experience. At the core, Safely is designed to protect people from unsafe situations with real-time crime data, meaning that it was important to establish a sense of security during initial interactions. Having that as a key concept allowed me to really evaluate how well and intuitive each functionality performs before transferring my designs over to our developers.  </p></div><div class="col-sm-1"></div>
+                                 <div class="col-sm-4" >
+                <p class="font">Reflective Design</p><p class="spacing" style="text-align: justify">At the end of the day, reflective emotional design is what matters the most to Safely (and to most digital solutions). Once users find that our product has the potential to make an impact on their lives, we hope it keeps them coming back for more because it holds intrinsic value. Although it was critical to design our Safely app to look appealing and be usable, no value would be given to our product if users did not feel the need to use it for their protection. 
+</p></div>
+                 </div>
+        
+<!--
+         <div class="row row-space2x">
+            
+            
+            
+            <div class="col-sm-12">
+               <p class="center" style="text-align: center">Emotional Design</p>
                     </div>
                     
     
         </div>
                         <div class="row row-space2x">
-                        <div class="col-sm-1">
-            </div>
-            <div class="col-sm-4" >
-                <p class="font">Visceral Emotional Design</p><p class="spacing">This type of emotional design is what motivated me to take on the role as the UI designer from the start of the project. I wanted to challenge myself to create a quality experience that looked and felt easy to use for first-time users by emphasizing concepts of minimalism. Successfully doing so would highlight the importance of Safely's data and core functionalities.</p></div>
-                 </div>
-                                        
-                 <div class="row row-space">
                         <div class="col-sm-4">
             </div>
-            <div class="col-sm-4 " >
-                <p class="font">Behavioral Emotional Design</p><p class="spacing">As much as I wanted to design a visually appealing app, I also knew it was important to create a functional user experience. At the core, Safely is designed to protect people from unsafe situations with real-time crime data, meaning that it was important to establish a sense of security during initial interactions. Having that as a key concept allowed me to really evaluate how well and intuitive each functionality performs before transferring my designs over to our developers.  </p></div>
+            <div class="col-sm-4" >
+                <p class="font" style="text-align: center">Visceral Emotional Design</p><p class="spacing" style="text-align: justify">This type of emotional design is what motivated me to take on the role as the UI designer from the start of the project. I wanted to challenge myself to create a quality experience that looked and felt easy to use for first-time users by emphasizing concepts of minimalism. Successfully doing so would highlight the importance of Safely's data and core functionalities.</p></div>
                  </div>
-        <div class="row row-space3">
-                        <div class="col-sm-7">
+                                        
+                 <div class="row row-space2x">
+                        <div class="col-sm-3">
             </div>
-            <div class="col-sm-4 " >
-                <p class="font">Reflective Emotional Design</p><p class="spacing">At the end of the day, reflective emotional design is what matters the most to Safely (and to most digital solutions). Once users find that our product has the potential to make an impact on their lives, we hope it keeps them coming back for more because it holds intrinsic value. Although it was critical to design our Safely app to look appealing and be usable, no value would be given to our product if users did not feel the need to use it for their protection. 
+            <div class="col-sm-6" >
+                <p class="font" style="text-align: center">Behavioral Emotional Design</p><p class="spacing" style="text-align: justify">As much as I wanted to design a visually appealing app, I also knew it was important to create a functional user experience. At the core, Safely is designed to protect people from unsafe situations with real-time crime data, meaning that it was important to establish a sense of security during initial interactions. Having that as a key concept allowed me to really evaluate how well and intuitive each functionality performs before transferring my designs over to our developers.  </p></div>
+                 </div>
+        <div class="row row-spaceX">
+                        <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4" >
+                <p class="font" style="text-align: center">Reflective Emotional Design</p><p class="spacing" style="text-align: justify">At the end of the day, reflective emotional design is what matters the most to Safely (and to most digital solutions). Once users find that our product has the potential to make an impact on their lives, we hope it keeps them coming back for more because it holds intrinsic value. Although it was critical to design our Safely app to look appealing and be usable, no value would be given to our product if users did not feel the need to use it for their protection. 
 </p></div>
                  </div>
+-->
              </div>
-        <div class="container-fluid" style="background: #1d2029; margin-left: 0px; margin-right: 0px;">
+        <div class="container-fluid" style="background: #e9d5ca; margin-left: 0px; margin-right: 0px;">
             <div class="row row-spaceX">
                 <div class="col-sm-12 centeralign">
                     <iframe width="377" height="667" src="https://xd.adobe.com/embed/7bdb21d5-d884-40c9-b6a3-3ca5a1f7dc5d/" frameborder="0" allowfullscreen></iframe>
@@ -476,43 +451,38 @@ Something About Us ©
         
 
             <div class="row row-space2x">
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
             </div>
-            <div class="col-sm-6 " ><p class="font">Presenting Safely </p>
-                <p class="spacing">On the evening of May 31, we presented Safely and its potential to protect commuters with real-time crime data at the Informatics Capstone Night. This event became the conclusion to our 20-week journey in making a social impact to the city of Seattle. 
+            <div class="col-sm-4" ><p class="font" style="text-align: center">Presenting Safely </p>
+                <p class="spacing" style="text-align: justify">On the evening of May 31, we presented Safely and its potential to protect commuters with real-time crime data at the Informatics Capstone Night. This event became the conclusion to our 20-week journey in making a social impact to the city of Seattle. 
 </p>
             </div>
 
         </div>
+
+         
         <div class="row row-spaceX">
             <div class="col-sm-12">
-                <img class="img-fluid" src="/images/safely_capstone@2x.png">
+                <img class="img-fluid" src="/images/safelyTeam@2x.png">
             </div>
         </div>
-         <a href="/pages/udsm.html">
-                 <div class="row" style="padding-top: 200px">
-            <div class="col-sm-1"></div>
-             
-            <div class="col-sm-6">
-            
-            <p class="link">UP NEXT</p>
-            <p class="center">University District Street Medicine</p>
-                    </div>  
-            <div class="col-sm-4">
-            <p class="font">Providing quality care for individuals experiencing homelessness.</p>
-                    </div> 
-
+         
+          <div class="row row-space2x" style="text-align: center">
+                <div class="col-sm-12"><p class="center" style="font-family: 'aw-conqueror-didot';">Up Next: University District Street Medicine</p><p class="link" style="color: #e9d5ca;">PROVIDING QUALITY CARE FOR INDIVIDUALS EXPERIENCING HOMELESSNESS</p></div>
         </div>
-                     </a>
+                     
 
                     <div class="row row-space" style="padding-bottom: 0px">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-11">
+                        
+                        <div class="col-sm-12">
             
-        <a href="/pages/udsm.html"><img class="img-fluid" src="/images/udsm_upnext.png" alt="Adrian Pacheco"></a>
+        <a href="/pages/udsm.html"><img class="img-fluid" src="/images/udsmPreview.png" alt="Adrian Pacheco"></a>
             </div>
+                        
+
               
         </div>
+            </div>
          
     
 
