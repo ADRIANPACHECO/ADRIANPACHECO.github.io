@@ -4,8 +4,8 @@ body {
     font-family: "aktiv-grotesk", sans-serif;
     font-style: normal;
     letter-spacing: 1px;
-    color: black; 
-    cursor: url(/images/cursor_imgmain.png), auto;
+    color: #010509; 
+    
 }
 
 h1 {
@@ -14,51 +14,57 @@ h1 {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #010509;
 }
 
 a:hover {
     text-decoration: none;
-    color: #e9d5ca; 
+    color:  #010509; 
 }
 
-
-/*
-p {   
-    font-size: 16px;
-    font-style: normal;    
-}   
-*/
 
 .spacing {
         font-size: 14px;
     font-style: normal;  
     font-weight: 400;
     line-height: 24px;
-   
 }
 
+    .spacing2 {
+        line-height: 0px;
+                font-size: 14px;
+    font-style: normal;  
+    font-weight: 400;
+    }
+
+.spacingBold {
+    font-size: 14px;
+    font-style: normal;  
+    font-weight: 500;
+    margin-bottom: 0px;
+    
+}
 
 .row-space {
-    padding-top: 25px; padding-bottom: 25px;
+    padding-top: 24px; padding-bottom: 24px;
 }
 
 .row-space2x {
-    padding-top: 75px;
+    padding-top: 72px;
 }
 
 .row-space1x {
-    padding-top: 25px;
+    padding-top: 24px;
 }
 
 .row-space3 {
-    padding-bottom: 75px;
+    padding-bottom: 72px;
 
 }
 
 
 .row-spaceX {
-    padding-top: 75px; padding-bottom: 75px;
+    padding-top: 72px; padding-bottom: 72px;
 }
 
 .fade {
@@ -149,44 +155,43 @@ p {
 
 .navbar {
     background-color: transparent;
-    padding: 48px;
-    padding-bottom: 0px;
-
+   padding: 20px;
 }
 
 .nav-item  {
-    font-size: 12px;
-    font-weight: 500;
+    padding-top:16px;
 }
 
+
+
 .nav-item > .nav-link {
-/*    color: #e0dcd5;*/
-        color: #e9d5ca;
-
-
+    font-size: 14px;
+        color: #010509;
+    font-family: "acta-display", sans-serif;
+    font-weight: 600;
 }
 
 .navbar-nav > li.active > a {
-   color: black;
+   color: #010509;
 }
 
 
 .fa-volume-up {
 /*    color: #e0dcd5;*/
-        color: #e9d5ca;
+        color: #010509;
 
 }
 
 .fa-volume-up:hover {
-    color: black;
+    color: #010509;
 }
 
 .fa-volume-up-on {
-    color: black;
+    color: #010509;
 }
 
 .navbar .navbar-right > li > a {
-    color: black;
+    color: #010509;
     text-decoration: none;
     font-size: 12px;
     font-weight: 500;
@@ -199,7 +204,7 @@ p {
 }
 
 .navbar .navbar-right > li.active > a {
-    color: #333;
+    color: #010509;
     font-weight: 600;
     
 }
@@ -211,16 +216,15 @@ p {
 }
 .icon-bar
 {
-  background:#bbb !important; /*Whatever colour you want for icon lines*/
+  background: #010509; !important; /*Whatever colour you want for icon lines*/
 }
 .navbar-toggle
 {
   background: transparent !important; /*Whatever colour you want for background */
 }
 .container-fluid {
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .testimonial-group > .row {
@@ -261,10 +265,13 @@ p {
 
 
 hr {
-    border: 0;
-    height: 3px;
-    background: #333;
+   
+    height: 1px;
+    background: #010509;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
+
 
 span {
     font-weight: 600;
@@ -276,16 +283,28 @@ span {
     text-align: center;
 }
 
-.center {
-    font-family: "aw-conqueror-didot";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    letter-spacing: 0px;
-    line-height: 40px;
+    .center {
+        font-family: "acta-display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 32px;
+    }
+
+    .center2 {
+        font-family: "acta-display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+
+.show {
     
 }
 
+/*
 .font {
 font-family: "aktiv-grotesk", sans-serif;
 font-style: normal;
@@ -294,6 +313,26 @@ font-size: 22px;
     line-height: 30px;
     color: #e9d5ca; 
 }
+*/
+
+    .font {
+        font-family: "acta-display";
+        font-style: normal;
+        font-weight:600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #010509;
+    }
+    
+    .font2 {
+        font-family: "acta-display";
+        font-style: normal;
+        font-weight:600;
+        font-size: 20px;
+        line-height: 16px;
+        color: #010509;
+    }
+
 
 .titlebold {
 font-family: "aktiv-grotesk", sans-serif;
@@ -303,31 +342,19 @@ font-size: 20px;
     letter-spacing: 0px;  
 }
 
-.link {
-font-family: "aktiv-grotesk", sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;  
-}
+    .link {
+        font-family: "aktiv-grotesk", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px; 
+        line-height: 14px;
+    }
 
 .link > a {
-/*    color: #e0dcd5;*/
-    color: #e9d5ca;
+    color: #010509;
+    text-decoration: underline;
 }
 
-.link > a:hover {
-    color: black;
-}
-
-.parallax {
-
-    height: 100%; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .block {
     border-top-style: solid;
@@ -362,47 +389,25 @@ font-size: 12px;
     overflow-y:hidden;
 }
 
+#logo {
+    width: 70px;
+}
 
-/*
-.carousel-fade .carousel-inner > .carousel-item {
-    transition-property: opacity;
+    .flex-center {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+        padding: 24px;
+        
 }
-.carousel-fade .carousel-inner > .carousel-item,
-.carousel-fade .carousel-inner > .carousel-item.active.left {
-    opacity: 0;
+
+.img-fluid {
+    padding-bottom: 24px;
 }
-.carousel-fade .carousel-inner > .carousel-item.active,
-.carousel-fade .carousel-inner > .carousel-item.next.left {
-    opacity: 1;
-}
-.carousel-fade .carousel-inner > .next,
-.carousel-fade .carousel-inner > .prev,
-.carousel-fade .carousel-inner > .active.left,
-.carousel-fade .carousel-inner > .active.right {
-    left: 0;
-}
-.carousel-fade .carousel-inner > .carousel-item.next,
-.carousel-fade .carousel-inner > .carousel-item.active.right,
-.carousel-fade .carousel-inner > .carousel-item.prev,
-.carousel-fade .carousel-inner > .carousel-item.active.left {
-    transform: translate3d(1, 0, 0);
-}
-*/
 
 
-
-
-/*
-.carousel-indicators > li,
-.carousel-indicators > li.active{
-    width: 100px;
-    height: 25px;
-    border-radius: 0;
-    border: solid 1px grey;
-    background: lightgrey;
-    text-indent: 0;
-}
-*/
 
 /*
 // Extra small devices (portrait phones, less than 576px)
@@ -416,38 +421,107 @@ font-size: 12px;
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+    .container-fluid {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
     .center {
-        font-family: "aw-conqueror-didot";
+        font-family: "acta-display";
         font-style: normal;
-        font-weight: 500;
-        font-size: 52px;
-        line-height: 52px;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 44px;
+    }
+    
+    .center2 {
+        font-family: "acta-display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 36px;
     }
     
     .font {
-        font-family: "aktiv-grotesk", sans-serif;
+        font-family: "acta-display";
         font-style: normal;
-        font-weight:500;
+        font-weight:600;
         font-size: 24px;
-        line-height: 32px;
-        color: #e9d5ca; 
+        line-height: 28px;
+        color: #010509; 
     }
     
     .font2 {
-        font-family: "aktiv-grotesk", sans-serif;
+        font-family: "acta-display";
         font-style: normal;
-        font-weight:500;
-        font-size: 24px;
-        line-height: 32px;
-        color: #e9d5ca; 
+        font-weight:600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #010509;
     }
     
-    .link {
-        font-family: "aktiv-grotesk", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;  
+    .navbar {
+    background-color: transparent;
+        padding-left: 36px;
+        padding-right: 36px;
+}
+    .nav-item  {
+    padding-top: 0px;
+}
+    .nav-item > .nav-link {
+    font-size: 14px;
+        color: #010509;
+    font-family: "acta-display", sans-serif;
+    font-weight: 600;
+  
+}
+        .overlay {
+        opacity: 0.1;
+        filter: alpha(opacity=20); /* For IE8 and earlier */
+            -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
     }
+
+
+    .overlay:hover {
+
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+        .overlay:after {
+
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+    
+    
+    .imgBorder {
+    border-left-style: solid; 
+    border-left-width: 2px;
+        padding-left: 16px;
+    
+}
+    hr {
+   
+    height: 1px;
+    background: #010509;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+    .flex-center {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+}
+    .img-fluid {
+    padding-bottom: 0px;
+
+}
 
 
 }

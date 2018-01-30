@@ -356,7 +356,7 @@
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
-    color: black;
+    color: #101509;
 }
 
 /* Sink */
