@@ -1,6 +1,6 @@
 body {
 /*    background-color: #F2F2F2;#e0dcd5;*/
-    background-color: #faf5f0;
+    background-color: #FBF9F5;
     font-family: "aktiv-grotesk", sans-serif;
     font-style: normal;
     letter-spacing: 1px;
@@ -422,8 +422,8 @@ font-size: 20px;
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
     .container-fluid {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
     .center {
@@ -462,8 +462,7 @@ font-size: 20px;
     
     .navbar {
     background-color: transparent;
-        padding-left: 36px;
-        padding-right: 36px;
+        padding: 36px;
 }
     .nav-item  {
     padding-top: 0px;
@@ -522,6 +521,10 @@ font-size: 20px;
     padding-bottom: 0px;
 
 }
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
 
 }
