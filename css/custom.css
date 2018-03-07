@@ -283,8 +283,8 @@ hr {
 
 span {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 28px;    
 }
 
 
@@ -340,7 +340,6 @@ font-size: 22px;
         font-size: 20px;
         line-height: 16px;
         color: #010509;
-        letter-spacing: 2px;
     }
 
 
@@ -457,7 +456,7 @@ font-size: 20px;
         font-family: "acta-display";
         font-style: normal;
         font-weight:600;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 28px;
         color: #010509; 
     }
