@@ -1,9 +1,10 @@
 body {
 /*    background-color: #F2F2F2;#e0dcd5;*/
     background-color: #FBF9F5;
-    font-family: "aktiv-grotesk", sans-serif;
+/*    font-family: "aktiv-grotesk", sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-style: normal;
-    letter-spacing: 1px;
     color: #010509; 
     
 }
@@ -33,14 +34,15 @@ a:hover {
         font-size: 14px;
     font-style: normal;  
     font-weight: 400;
-    line-height: 26px;
+    line-height: 28px;
 }
 
     .spacing2 {
-        line-height: 0px;
-                font-size: 14px;
-    font-style: normal;  
-    font-weight: 400;
+        line-height: 8px;
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;  
     }
 
 .spacingBold {
@@ -175,8 +177,8 @@ a:hover {
 .nav-item > .nav-link {
     font-size: 20px;
         color: #010509;
-    font-family: "acta-display", sans-serif;
-    font-weight: 600;
+            font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 .navbar-nav > li.active > a {
@@ -282,9 +284,8 @@ hr {
 
 
 span {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 28px;    
+    font-weight: 600;
+    font-size: 14px;   
 }
 
 
@@ -293,17 +294,19 @@ span {
 }
 
     .center {
-        font-family: "acta-display";
+                    font-family: 'Playfair Display', serif;
+    font-weight: 700;
         font-style: normal;
-        font-weight: 600;
+       
         font-size: 34px;
         line-height: 32px;
     }
 
     .center2 {
-        font-family: "acta-display";
+                   font-family: 'Playfair Display', serif;
+    font-weight: 700;
         font-style: normal;
-        font-weight: 600;
+       
         font-size: 26px;
         line-height: 26px;
     }
@@ -325,18 +328,18 @@ font-size: 22px;
 */
 
     .font {
-        font-family: "acta-display";
+                    font-family: 'Playfair Display', serif;
+    font-weight: 700;
         font-style: normal;
-        font-weight:600;
         font-size: 20px;
         line-height: 24px;
         color: #010509;
     }
     
     .font2 {
-        font-family: "acta-display";
+            font-family: 'Playfair Display', serif;
+    font-weight: 700;
         font-style: normal;
-        font-weight:600;
         font-size: 20px;
         line-height: 16px;
         color: #010509;
@@ -344,19 +347,18 @@ font-size: 22px;
 
 
 .titlebold {
-font-family: "aktiv-grotesk", sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 font-style: normal;
-font-weight: 400;
 font-size: 20px;
     letter-spacing: 0px;  
 }
 
     .link {
-        font-family: "aktiv-grotesk", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px; 
-        line-height: 14px;
     }
 
 .link > a {
@@ -437,34 +439,37 @@ font-size: 20px;
     }
     
     .center {
-        font-family: "acta-display";
+/*        font-family: "acta-display";*/
+        font-family: 'Playfair Display', serif;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 44px;
         line-height: 44px;
     }
     
     .center2 {
-        font-family: "acta-display";
+        font-family: 'Playfair Display', serif;
         font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 36px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46px;
     }
     
     .font {
-        font-family: "acta-display";
+/*        font-family: "acta-display";*/
+        font-family: 'Playfair Display', serif;
         font-style: normal;
-        font-weight:600;
+        font-weight:700;
         font-size: 22px;
         line-height: 28px;
         color: #010509; 
     }
     
     .font2 {
-        font-family: "acta-display";
+/*        font-family: "acta-display";*/
+        font-family: 'Playfair Display', serif;
         font-style: normal;
-        font-weight:600;
+        font-weight:700;
         font-size: 20px;
         line-height: 24px;
         color: #010509;
@@ -499,9 +504,9 @@ font-size: 20px;
 }
     .nav-item > .nav-link {
     font-size: 14px;
-        color: #010509;
-    font-family: "acta-display", sans-serif;
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+        letter-spacing: 1px;
   
 }
         .overlay {
