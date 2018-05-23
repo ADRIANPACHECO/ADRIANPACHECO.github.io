@@ -2,7 +2,7 @@ body {
 /*    background-color: #F2F2F2;#e0dcd5;*/
     background-color: #FBF9F5;
 /*    font-family: "aktiv-grotesk", sans-serif;*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #010509; 
@@ -39,7 +39,7 @@ a:hover {
 
     .spacing2 {
         line-height: 8px;
-        font-family: 'Roboto', serif;
+        font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 14px;
         font-style: normal;  
@@ -312,21 +312,6 @@ span {
     }
 
 
-.show {
-    
-}
-
-/*
-.font {
-font-family: "aktiv-grotesk", sans-serif;
-font-style: normal;
-font-weight:500;
-font-size: 22px;
-    line-height: 30px;
-    color: #e9d5ca; 
-}
-*/
-
     .font {
                     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -469,10 +454,10 @@ font-size: 20px;
 /*        font-family: "acta-display";*/
         font-family: 'Playfair Display', serif;
         font-style: normal;
-        font-weight:700;
+        font-weight: 700;
         font-size: 20px;
         line-height: 24px;
-        color: #010509;
+        padding-bottom: 0px;
     }
     header {
             background: #FBF9F5;
@@ -565,7 +550,14 @@ font-size: 20px;
     width: 90px;
 }
     
+    .nav-justified {
+        height: 80px;
+    }
 
+    a.active {
+        background: white;
+        align-items: center;
+    }
 
 }
 
