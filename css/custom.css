@@ -1,7 +1,6 @@
 body {
 /*    background-color: #F2F2F2;#e0dcd5;*/
     background-color: #FBF9F5;
-/*    font-family: "aktiv-grotesk", sans-serif;*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -31,18 +30,19 @@ a:hover {
 
 
 .spacing {
-        font-size: 14px;
+        font-size: 15px;
     font-style: normal;  
     font-weight: 400;
-    line-height: 28px;
+    line-height: 26px;
 }
 
     .spacing2 {
-        line-height: 8px;
+        
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 14px;
-        font-style: normal;  
+        font-size: 15px;
+        font-style: normal; 
+         line-height: 26px;
     }
 
 .spacingBold {
@@ -285,7 +285,7 @@ hr {
 
 span {
     font-weight: 600;
-    font-size: 14px;   
+    font-size: 16px;
 }
 
 
@@ -340,16 +340,16 @@ font-size: 20px;
 }
 
     .link {
-        font-family: "Roboto", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px; 
+        font-size: 15px; 
     }
 
-.link > a {
-    color: #010509;
-    text-decoration: underline;
-}
+    .link > a {
+        color: #010509;
+        text-decoration: underline;
+    }
 
 
 .block {
@@ -425,7 +425,7 @@ font-size: 20px;
     }
     
     .center {
-/*        font-family: "acta-display";*/
+        
         font-family: 'Playfair Display', serif;
         font-style: normal;
         font-weight: 700;
@@ -458,6 +458,7 @@ font-size: 20px;
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
+        margin-bottom: 0px;
         padding-bottom: 0px;
     }
     header {
@@ -486,14 +487,14 @@ font-size: 20px;
 }
     
     .nav-item  {
-    padding-top: 0px;
+        padding-top: 0px; 
 }
+    
     .nav-item > .nav-link {
     font-size: 15px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-        letter-spacing: 1px;
-  
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+       
 }
         .overlay {
         opacity: 0.1;
@@ -558,6 +559,20 @@ font-size: 20px;
     a.active {
         background: white;
         align-items: center;
+    }
+    
+    .button {
+         font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        background: transparent;
+        border: 2px;
+        border-style: solid;
+        border-radius: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+       
+        
     }
 
 }
