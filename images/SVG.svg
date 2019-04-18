@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-SVG">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="SVG" clip-path="url(#clip-SVG)">
+    <g id="Created_by_Luca_Carbone" data-name="Created by Luca Carbone" transform="translate(-3.891 -3.89)">
+      <path id="Path_95" data-name="Path 95" d="M27.89,3.89a23.986,23.986,0,1,1-.005,0Zm0,45.953a21.708,21.708,0,0,1-4.684-.521,21.957,21.957,0,0,0,0-42.882A21.708,21.708,0,0,1,27.89,5.92a21.955,21.955,0,0,1,0,43.91Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>
