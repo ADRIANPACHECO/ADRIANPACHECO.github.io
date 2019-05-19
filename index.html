@@ -133,9 +133,11 @@ Something About Us ©
     <div class="container-fluid" style="height: 20vh" >
          <div class="row topbar">
               <div class="col-6">
+                  <a href="/index.html">
                   <video height="32px" preload playsinline autoplay muted loop style="  position: relative; top: 50%; transform: translateY(-50%);">
                         <source src="/videos/logo-rotating.mp4" type="video/mp4" >
                   </video>
+                      </a>
              </div>
             <div class="col-6" style="text-align: right; ">
                 <p class="H2" id="time" style="position: relative; top: 50%; transform: translateY(-50%); font-size: 16px"></p>
@@ -215,7 +217,7 @@ Something About Us ©
                         } else if (d === 7 || d === 14 || d === 21 || d === 28) {
                             day = "Tuesday";
                         }
-                        else if (d === 1 || d === 8 || d === 15 || d === 21 || d === 29) {
+                        else if (d === 1 || d === 8 || d === 15 || d === 22 || d === 29) {
                             day = "Wednesday";
                         }
                         else if (d === 2 || d === 9 || d === 10 || d === 16 || d == 23) {
@@ -554,7 +556,7 @@ Something About Us ©
                         } else if (d === 7 || d === 14 || d === 21 || d === 28) {
                             day = "Tuesday";
                         }
-                        else if (d === 1 || d === 8 || d === 15 || d === 21 || d === 29) {
+                        else if (d === 1 || d === 8 || d === 15 || d === 22 || d === 29) {
                             day = "Wednesday";
                         }
                         else if (d === 2 || d === 9 || d === 10 || d === 16 || d == 23) {
@@ -888,7 +890,7 @@ Something About Us ©
                         } else if (d === 7 || d === 14 || d === 21 || d === 28) {
                             day = "Tuesday";
                         }
-                        else if (d === 1 || d === 8 || d === 15 || d === 21 || d === 29) {
+                        else if (d === 1 || d === 8 || d === 15 || d === 22 || d === 29) {
                             day = "Wednesday";
                         }
                         else if (d === 2 || d === 9 || d === 10 || d === 16 || d == 23) {
@@ -1219,7 +1221,7 @@ Something About Us ©
                         } else if (d === 7 || d === 14 || d === 21 || d === 28) {
                             day = "Tuesday";
                         }
-                        else if (d === 1 || d === 8 || d === 15 || d === 21 || d === 29) {
+                        else if (d === 1 || d === 8 || d === 15 || d === 22 || d === 29) {
                             day = "Wednesday";
                         }
                         else if (d === 2 || d === 9 || d === 10 || d === 16 || d == 23) {
@@ -1540,11 +1542,11 @@ Something About Us ©
               <div class="col-md-3 grid" >
                   <div class="about">
                             
-                      <p class="H2" style="font-weight: 400">I am a Seattle-based Designer creating digital experiences with space & grids. <span style="font-style: italic" >This site is currently under construction.</span>
+                      <p class="H2">My name's Adrian and I'm a Seattle-based Designer. I'm currently designing digital experiences as a freelancer. Let's get in touch if you're interested in working together! :) <span style="font-style: italic; font-weight: 400" >This site is currently under construction.</span>
                                 </p>
                       </div>
                   <div class="spacetitle">
-                      <p class="H3" style="font-weight: 600; position: relative; top: 50%; transform: translateY(-50%);" >SELECTED WORK</p>
+                      <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%);" >Selected Work</p>
                   </div>
                   
                   <div class="pre-scrollable">
@@ -1671,37 +1673,96 @@ Something About Us ©
 
 </div>
 
-                <div class="col-4 grid featured" >
-                    
-                <a href="https://www.instagram.com/seattledesignnerds/" target="_blank" style="text-decoration: none">
-                    <div style="padding: 24px;" >
-                    <img style="width: 100%; padding-bottom: 32px" src="/images/imgholder.svg">
-                        <p class="H3" style="text-decoration: none">Available next week</p>
-                    <p class="H1">How do you make Seattle a little more awesome?</p>
-                        <div  id="textbox" style="padding-top: 72px;" >
-                            <p class="alignleft H3 textHover"><strong>Seattle Design Nerds</strong><br>Arts & Architecture</p>
-                            <p class="alignright H3"><br><img src="/images/favorite.svg" style="padding-right: 11px; ">0</p>
-          
-                        </div> 
+                <div class="col-4 grid featured" onclick="openNav()">
+                    <div class="spacetitle" >
+                        <p class="H2 alignleft "style="position: relative; top: 50%; transform: translateY(-50%)" >Featured Work</p><span class="dot alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span></div>
+
+                <div style="padding: 16px" >
+                        <video width="100%" preload playsinline autoplay muted loop >
+                        <source src="/videos/designNerds/wemograph.mp4" type="video/mp4" >
+                  </video>
+                           
+                        
+<!--
+                        <section class="slideshow">
+                            <img src="/images/imgholder.svg">
+                            <img src="/images/designNerds/rainbrella_1.jpg">
+                            <img src="/images/designNerds/rainbrella_2.jpg">
+                            <img src="/images/designNerds/rainbrella_3.png">
+                            <img src="/images/designNerds/wemograph_1.jpg">
+                            <img src="/images/designNerds/wemograph_2.png">
+                        </section>
+                        
+                            <script type="text/javascript">
+                            
+                            const slideshow = document.querySelector("section.slideshow");
+                            const images = slideshow.querySelectorAll("img");
+                            
+                            slideshow.addEventListener("mousemove", function (event) {
+                                const x = event.offsetX;
+                                const width = this.offsetWidth;
+                                const percentage = x / width;
+                                const imagesNumber = Math.floor(percentage * images.length);
+                                
+                                images.forEach(images => {
+                                    images.style.zIndex = 0;
+                                });
+                                
+                                images[imagesNumber].style.zIndex = 1;
+                            
+                            });
+                        
+                        
+                        </script>
+-->
+                                            
+                                           
                         
                     </div>
-                    </a>
+                                       <div class="row">
+                        <div class="col">
+                                <p class="H1">How do you make Seattle a little more awesome?</p>
+                        </div>
+                
+                    </div>
+                                          <div class="featuredSpace" >
+                                              
+                      
+                            <p class="alignleft H3"><strong>Seattle Design Nerds</strong><br> Digital Design, Interaction Design</p>
+                                              <div>
+                                    <p class="alignright H3"><br><img src="/images/favorite.svg" style="padding-right: 11px; ">N/A</p></div>
+                                                  
+          
+                  
+                        </div>
+
               </div>
-                            <div class="col-4 grid">
-                                <a href="https://www.thehouseofmarley.com/" target="_blank">
-                <div style="padding: 24px">
-                    <img style="width: 100%; padding-bottom: 32px" src="/images/imgholder.svg">
-                    <p class="H3" style="text-decoration: none">Available next week</p>
+              
+
+                            <div class="col-4 grid featured">
+
+                                <a href="https://www.thehouseofmarley.com/"  target="_blank">
+                        <div class="spacetitle">
+                        <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Featured Work</p>
+                            <span class="dot alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span></div>
+                                                        <div class="featuredSpace" >
+                      
+                            <p class="alignleft H3"><strong>House of Marley</strong><br>Digital Design</p>
+                            <p class="alignright H3"><br><img src="/images/favorite.svg" style="padding-right: 11px; ">N/A</p>
+          
+                  
+                        </div>
+                <div style="padding: 16px">
+                    <img style="width: 100%" src="/images/imgholder.svg">
+                    <p class="H3" style="text-decoration: none; padding-top: 24px">Available next week</p>
                     <p class="H1">How can an audio experience support global reforestation? </p>
-                        <div id="textbox" style=" padding-top: 72px" >
-                            <p class="alignleft H3 textHover"><strong>House of Marley</strong><br>Digital Design</p>
-                            <p class="alignright H3"><br><img src="/images/favorite.svg" style="padding-right: 11px;">0</p>
-           
-                        </div> 
                         
                     </div>
                                 </a>
+                                
+
               </div>
+              
 
 
                 <div class="col-1 grid">
@@ -1766,7 +1827,7 @@ Something About Us ©
                   
                   </script>
                     
-                    <div class="binary" >
+                    <div class="binary">
                     <p class="H5">
 
                         01101100 <button type="button" class="flash-button alignright" style="animation-delay: 55.0s; "></button><br>
@@ -1804,9 +1865,9 @@ Something About Us ©
 
 <div id="mc_embed_signup" >
 <form action="https://designedwithspace.us19.list-manage.com/subscribe/post?u=53a0c9cae58f444a1e77551bf&amp;id=8107363a84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
+    <div id="mc_embed_signup_scroll" style="border-style: solid; border-width: 1px">
 	<label for="mce-EMAIL">
-        <p class="H3">Cosmic newsletters sent to you every Sunday morning.</p></label>
+        <p class="H2">With Space is a written series about the cosmos sent to you every 2 weeks!</p></label>
         <div style=" margin-bottom: 11px">
 	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required style="border-color: #000000; border-radius: 0px;     font-size: 12px;
      margin: 0px;
@@ -1859,85 +1920,465 @@ window.onclick = function(event) {
                                             
             
         </div>
-            <div class="z1" id="myNav">
+            <div class="project" id="myNav">
+                    <div class="row sticky" onclick="closeNav()" style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                <div class="photographer">
+ <video width="100%" style="padding: 16px" preload playsinline autoplay muted loop>
+                        <source src="/videos/designNerds/rainbrella.mp4" type="video/mp4" >
+                  </video>
+                  <div class="top-left">
+                    <div class="H4" >00110001</div>
+                  </div>
+                </div>
+                
+               
 
+                
+                
+                <div class="row">
+                        <div class="col">
 
-    <div class="sticky">
-        <div class="row" onclick="closeNav()">
-                        <div class="col-8 grid" style="border-bottom-width: 0px;">
-                             <div class="box">
-                                <div class="inner">
-                                        <p class="font">SEATTLE DESIGN NERDS</p>
-                                <p class="font2">ART & ARCHITECTURE</p>
-                                <div class="tab" >
-                                <p class="center">01</p>
-                                    </div>
-                                    </div>
-
-                        </div>
-                      </div>
-             <div class="col-4 grid" id="close" onclick="closeNav()" >
-                             
-          <p class="font" style="text-align: center; position: relative; top: 50%; transform: translateY(-50%);">BACK</p>
                   
-                      </div>
+                      
 
-            </div>
+                        <p class="H1">Seattle Design Nerds</p>
+                
+                        
+      
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         <p class="H2">Location</p>
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design, Interaction Design</p>
+                         <p class="H3">Aug 2018 - present</p>
+                        <p class="H3">Seattle, WA</p>
+           
+                    
+                    </div>
+                    <div class="col-1">
         
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Team</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="http://seattledesignnerds.org" target="_blank"><p class="H3">seattledesignnerds.org</p></a>
+                         <p class="H3">Trevor Dykstra, George Zatloka, Emily Danchik, Mike Hua, Janet Le, Letao Tao, Ken Roepe, Michelle Li, Jessie Kawata </p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How do you make Seattle a little more awesome?</p>
+            </marquee>
+
+        </div>
+                
+                <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">
+The Seattle Design Nerds are a group of designers who come together each week to create exciting things that are experienced in unexpected ways and locations. We make interactive installments using large inflatables, light projections, umbrellas, touchpads, and many other materials. Come check us out this year at Bumbershoot, Seattle Design Festival Block Party, Burien Arts A Glow, and Borealis! </p>
+                        </div>
+                    
+                </div>
+
+                
+
+                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/rainbrella_1.jpg" style="padding: 16px">
+                  <div class="top-left">
+                    <div class="H4">00110010</div>
+                  </div>
+                </div>
+                
+                                        <div class="row">
+                        <div class="col">
+                                <p class="H1">Rainbrella</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-7">
+                        
+                        <p class="H3">We created an illuminated art installation for the 2018 Redmond Lights Festival. The clouds we created were made from recycled milk cartons and polyester furniture stuffing. Each internally lit with color changing LEDs and was installed below a large reflective umbrella. To set the mood, we featured a rain-centric playlist as a tribute to the rainy months we Pacific Northwesterners secretly love.</p>
+                    </div>
+                
+                </div>
+                                <div class="row" style="border-bottom-style: solid; border-bottom-width: 1px;">
+                    <div class="col-6" style="border-right-style: solid; border-right-width: 1px; padding-left: 0px; padding-right: 0px">
+                    <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/rainbrella_4.jpg" style="padding: 16px">
+                  <div class="top-left">
+                    <div class="H4">00110011</div>
+                  </div>
+                </div>
+                      
+
+                    </div>
+                                        <div class="col-6" style="padding-left: 0px; padding-right: 0px">
+                                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/rainbrella_5.jpg" style="padding: 16px">
+                  <div class="top-left" style="margin-right: 0px">
+                    <div class="H4">00110100</div>
+                  </div>
+                </div>
+                    
+
+                    </div>
+                
+                </div>
+
+                                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/rainbrella_3.png" style="border-bottom-style: solid; border-bottom-width: 1px">
+                  <div class="top-left">
+                    <div class="H4" style="color: #000000; padding-bottom: 0px">00110101</div>
+                  </div>
+                </div>
+                
+                                                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/stickercity_1.jpg" style="padding: 16px">
+                  <div class="top-left">
+                    <div class="H4">00110110</div>
+                  </div>
+                </div>
+                        <div class="row">
+                        <div class="col">
+                                <p class="H1">Sticker City</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-7">
+                        
+                        <p class="H3">We asked participants at the Pacific Science Center to work together to create an evolving city using stickers that have trees, roads, buildings, farms, and more.  </p>
+                    </div>
+                
+                </div>
+
+                <div class="row">
+                    <div class="col-6" style="border-right-style: solid; border-right-width: 1px; padding-left: 0px; padding-right: 0px">
+                    <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/stickercity_2.jpg" style="padding: 16px">
+                  <div class="top-left">
+                    <div class="H4">00110011</div>
+                  </div>
+                </div>
+                      
+
+                    </div>
+                                        <div class="col-6" style="padding-left: 0px; padding-right: 0px">
+                                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/stickercity_3.jpg" style="padding: 16px">
+                  <div class="top-left" style="margin-right: 0px">
+                    <div class="H4">00110111</div>
+                  </div>
+                </div>
+                    
+
+                    </div>
+                
+                </div>
+                                                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/stickercity_4.png" style="border-top-style: solid; border-top-width: 1px">
+                  <div class="top-left">
+                    <div class="H4" style="color: #000000; padding-bottom: 0px">00111000</div>
+                  </div>
+                </div>
+                                                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/touchingtouche_1.jpg" style="width: 100%; padding: 16px; border-top-style: solid; border-top-width: 1px">
+                  <div class="top-left">
+                    <div class="H4">00111001</div>
+                  </div>
+                </div>
+                
+                                                        <div class="row">
+                        <div class="col">
+                                <p class="H1">Touché</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-7">
+                        
+                        <p class="H3">Touché was revealed at Olympic Sculpture Park for the 2018 Seattle Art Museum Lights. We combined an inflatable with internal light projections and a CNC'd music box that contained a touchpad MIDI controller to make music and manipulate the projections.  </p>
+                    </div>
+                
+                </div>
+
+                <div class="photographer">
+        
+                <img class="image" src="/images/designNerds/touchingtouche_2.png" style="border-bottom-style: solid; border-bottom-width: 1px">
+                  <div class="top-left">
+                    <div class="H4" style="color: #000000">00110001 00110000
+
 
 </div>
+                  </div>
+                </div>
+                <div class="photographer">
         
-                                        <div class="row" style="height: 2000px">
-                <div class="col grid" style="background: #FBF8F3; border-top-width: 0px;">
-     
-                        
+                <img class="image" src="/images/designNerds/wemograph_1.jpg" style="padding: 16px">
+                  <div class="top-left">
+                    <div class="H4" >00110001 00110001
+
+
+</div>
+                  </div>
                 </div>
-                                            <div class="col grid" style="background: #FBF8F3; border-top-width: 0px;">
-     
+                
+                                                                        <div class="row">
+                        <div class="col">
+                                <p class="H1">Wemograph</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-7">
                         
+                        <p class="H3">For the 2018 Seattle Design Festival Block Party, we created a collaborative drawing installation that’s part MadLibs and part Etch-a-Sketch. The WeMeograph is a 4-person drawing machine where each player spins a dial to assemble what everyone draws as a team. The dials represent animals, clothing, actions, and locations for example, "Draw a sheep wearing a cape while dancing on the moon".  </p>
+                    </div>
+                
                 </div>
-                                            <div class="col grid" style="background: #FBF8F3; border-top-width: 0px;">
-     
-                        
-                </div>
-    
+                                         <div class="photographer">
+                            <img class="image" src="/images/designNerds/wemograph_2.png" style="border-bottom-style: solid; border-bottom-width: 1px">
+                                
+                  <div class="top-left">
+                    <div class="H4" style="color: #000000">00110001 00110010</div>
+                  </div>
                 </div>
 
-        
+                                <div class="photographer">
+                                <video width="100%" style="padding: 16px" preload playsinline autoplay muted loop>
+                        <source src="/videos/designNerds/wemograph.mp4" type="video/mp4" >
+                  </video>
+                  <div class="top-left">
+                    <div class="H4" >00110001 00110011</div>
+                  </div>
+                </div>
+
+  
+                                <div class="row spacetitleXL" style="padding-left: 0px; border-top-style: solid; border-top-width: 1px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Video by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110001</p>
+                    
+                    </div>
+  
+              </div>                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                    
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110010</p>
+                    
+                    </div>
+  
+              </div>                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                  
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110011</p>
+                    
+                    </div>
+  
+              </div>                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                   
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110100</p>
+                    
+                    </div>
+  
+              </div>                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                    
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photos by Adrian Pacheco, Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110101</p>
+                    
+                    </div>
+  
+              </div>                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                   
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110110</p>
+                    
+                    </div>
+  
+              </div>                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110011</p>
+                    
+                    </div>
+  
+              </div>                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110111</p>
+                    
+                    </div>
   
               </div>
+                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                 
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photos by Adrian Pacheco</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00111000</p>
+                    
+                    </div>
+  
+              </div>
+                                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                   
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00111001</p>
+                    
+                    </div>
+  
+              </div>
+                                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                 
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photos by Adrian Pacheco, Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110001 00110000</p>
+                    
+                    </div>
+  
+              </div>
+                                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                  
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photo by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110001 00110001</p>
+                    
+                    </div>
+  
+              </div>
+                                                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                  
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Photos by Adrian Pacheco, Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110001 00110010</p>
+                    
+                    </div>
+  
+              </div>                                                <div class="row spacetitleXL" style="padding-left: 0px;">
+                                  
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">Video by Trevor Dyskaka</p>
+                    
+                    </div>
+                                        <div class="col-3" style="text-align: right; border-right-style: solid; border-right-width: 1px">
+                        <p class="H3" style="position: relative; top: 50%; transform: translateY(-50%)">00110001 00110011</p>
+                    
+                    </div>
+  
+              </div>
+
+                  
+            
+              <script type="text/javascript">
+    
+
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "75%";
+                    }
+
+                    function closeNav() {
+                      document.getElementById("myNav").style.width = "0";
+                    }
+
+
+
+                </script>
                                              
 
         </div>
         </div>
             
-
-
-
-<!--
-<script type="text/javascript">
-    
-	var myFullpage = new fullpage('#fullpage', {
-        anchors:['firstPage', 'secondPage' , 'thirdPage' , 'fourthPage', 'fifthPage'],
-        
-    loopBottom: true,
-        scrollingSpeed: 1000,
-    
-        
-    });
-    
-    function openNav() {
-      document.getElementById("myNav").style.width = "75%";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0";
-    }
-    
-    
-    
-</script>
--->
         
                         
                                    

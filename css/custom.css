@@ -1,14 +1,11 @@
 .H1 {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 600;
     margin: 0px;
     font-family: 'Muli', sans-serif;
     line-height: 52px;
 }
 
-.H1:hover {
-    opacity: 0.6;
-}
 
 .H2 {
     font-size: 14px;
@@ -37,6 +34,13 @@ font-weight: 400;
 font-weight: 400;
     font-family: 'Muli', sans-serif;
     
+}
+
+.H6 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
 }
 
 
@@ -136,17 +140,8 @@ a:hover {
     background-size: contain;
 }
 
-/*
-.header { 
-    height: 100vh;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    
-}
-*/
+
+
 
 
 .project-landing {
@@ -517,17 +512,14 @@ font-size: 20px;
 }
     
 .box {
-        position: relative;
-        height: 72px;
-        background-color: #FFFEFC;
+        background-color: #FFFFFF;
         border-bottom-style: solid;
         border-width: 1px;
         width: 100%;
+    padding-top: 16px;
+    padding-bottom: 24px;
 }
     
-    .box:hover {
-        background: #FBF8F3;
-    }
     .tab {
         position:absolute; 
         top:0;right:0;
@@ -575,39 +567,87 @@ font-size: 20px;
         top: -100vh;
     }
     
-    .z1 {
-/*        position: fixed;*/
-                position: fixed;
+    .project {
+        position: fixed;
         z-index: 1;
-        height: 100%;  
+        height: 80vh;  
         width: 0; 
-        top: 0;
         left: 25%;
          background-color: white;
         transition: 1s ease;
     
         overflow-x: hidden;
+        
   
+    }
+    
+    .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    z-index: 1;
+
+}
+    
+    #back {
+        cursor: pointer;
+    }
+    
+    #back:hover {
+        height: 4vh;
+        transition: .2s ease-in-out;
+    }
+    
+    .dot {
+  height: 14px;
+  width: 14px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        margin-right: 16px;
+    }
+    
+    .dot:hover {
+        background-color: #000000;
+        
+    }
+    
+    .dotBack {
+          height: 14px;
+  width: 14px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        margin-right: 16px;
+        
+        
+    }
+    
+    .dotBack:hover {
+          background-color: transparent;
+        border-style: solid;
+        border-width: 1px;
+
     }
     
     #close:hover {
         background: #FBF8F3;
         
         
+        
     }
 
+    
+    
     
     .section {
         text-align: center;
     }
     
-    .inner {
-        padding-left: 11px;
-        position: relative; 
-        top: 50%; 
-        transform: translateY(-50%);
-       
-    }
 
     
     .center {
@@ -662,13 +702,6 @@ font-style: normal;
         
     }
 */
-    
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-    z-index: 1;
-}
     
     .navbar {
         padding-top: 24px;
@@ -901,7 +934,15 @@ font-style: normal;
         height: 3vh;
         border-bottom-style: solid;
         border-width: 1px;
-        padding-left: 11px;
+        padding-left: 16px;
+        
+    }
+    
+        .spacetitleXL {
+        height: 5vh;
+        border-bottom-style: solid;
+        border-width: 1px;
+        padding-left: 16px;
         
     }
 
@@ -918,6 +959,30 @@ font-style: normal;
         height: 88px;
         transition: .2s ease-in-out;
  
+       
+    }
+    
+    .featuredSpace {
+        position: absolute;
+        bottom: 0;
+        padding: 16px;
+        border-top-style: solid;
+        border-top-width: 1px;
+        width: 100%;
+        height: 72px;
+    }
+    
+    
+        .featured {
+        cursor: pointer;
+        height: 80vh;
+    }
+    
+        .inner {
+        padding-left: 11px;
+        position: relative; 
+        top: 50%; 
+        transform: translateY(-50%);
        
     }
     
@@ -1013,11 +1078,6 @@ font-style: normal;
         text-decoration: none;
     }
     
-    .textHover {
-        text-decoration: none;
-    }
-    .textHover:hover {
-        text-decoration: none; opacity: 0.6;
         
     }
 
@@ -1113,10 +1173,49 @@ font-style: normal;
         
     }
 
-
-
-
+    .photographer {
+      position: relative;
     
+    }
+
+
+    .top-left {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+        color: #ffffff;        
+}
+    
+/*
+    .textHover {
+        text-decoration: none;
+    }
+    .textHover:hover {
+        text-decoration: none; opacity: 0.6;
+*/
+/*
+    section.slideshow {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        cursor: pointer;
+   
+    }
+    
+    section.slideshow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        z-index: 0;
+    }
+    
+    section.slideshow img:first-child {
+        z-index: 1;
+    }
+*/
+
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
