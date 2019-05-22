@@ -614,6 +614,16 @@ font-size: 20px;
         
     }
     
+    .dotDrop {
+        height: 16px;
+  width: 16px;
+  background-color: #000000;
+        border-radius: 50%;
+  display: inline-block;
+        
+        
+    }
+    
     .dotBack {
           height: 14px;
   width: 14px;
@@ -933,7 +943,7 @@ font-style: normal;
     .spacetitle {
         height: 3vh;
         border-bottom-style: solid;
-        border-width: 1px;
+        border-bottom-width: 1px;
         padding-left: 16px;
         
     }
@@ -941,8 +951,17 @@ font-style: normal;
         .spacetitleXL {
         height: 5vh;
         border-bottom-style: solid;
-        border-width: 1px;
+        border-bottom-width: 1px;
         padding-left: 16px;
+        
+    }
+    
+    .spaceDrop {
+        position: relative;
+        height: 72px;
+        border-bottom-style: solid;
+        border-width: 1px;
+        
         
     }
 

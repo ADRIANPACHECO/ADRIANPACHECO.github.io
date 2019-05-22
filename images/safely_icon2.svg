@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-safely_icon2">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="safely_icon2" clip-path="url(#clip-safely_icon2)">
+    <path id="Path_8747" data-name="Path 8747" d="M0,0H32V32H0Z" fill="none"/>
+    <g id="noun_621582_cc" transform="translate(8 4)">
+      <path id="Path_5825" data-name="Path 5825" d="M10.15,14.242c0-1.6,2.487-3.45,4.172-5.416s.321-3.29-.121-4.172-.883-1.324-1.6-2.527S11.7.712,11.072.6A2.632,2.632,0,0,0,9.709.923C9.548.923,9.066.08,8.465,0,7.943,0,6.98.2,6.7.762c-.08.562-.4-.16-1.324-.12-.739.032-1.685,1.2-1.846,1.4s-1.805.642-2.006.842A23.94,23.94,0,0,0,0,5.5,14.424,14.424,0,0,1,.361,8.665c.08,1.6,1.364,3.651,1.926,5.937.45,1.833.307,7.3.233,9.4h8.35C10.651,21.942,10.15,15.617,10.15,14.242Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>
