@@ -67,7 +67,7 @@ Something About Us ©
     
         <script>
         if ($(window).width() < 768) {
-            alert('Site is currently under construction for your type of device. Please head over to a laptop / desktop to get the full experience! - Adrian Pacheco');
+            alert("Hey there, it's Adrian! Just letting you know that my site is not compatible on mobile devices just yet. I'm in the process of creating a mobile 'controller' that can interact with my site. Pretty cool right?");
                        
         }
         
@@ -1535,104 +1535,108 @@ Something About Us ©
                   </div>
                   
                   <div class="pre-scrollable">
-                      <a href="https://www.ellia.com/" target="_blank">
-                    <div class="space" style="background: none">
+                                          <div class="space" onclick="openBeyond()">
+                        <div class="inner">
+                            
+                            <p class="H2">Beyond</p>
+                            <p class="H3">Brand Identity, Digital Design</p>
+                        </div>
+                    </div>
+                     
+                    <div class="space" onclick="openEllia()">
                         <div class="inner">
 
                             <p class="H2">Ellia</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
-                      </a>
-                    <a href="http://www.growviolet.com/" target="_blank">
+                   
+                   
                         
-                    <div class="space" style="background: none">
+                    <div class="space" onclick="openViolet()">
                         <div class="inner" >
                       
                             <p class="H2">Violet</p>
-                            <p class="H3">Digital Design</p>
+                            <p class="H3">Brand Identity, Digital Design</p>
                         </div>
                     </div>
-                        </a>
-                      <a href="https://www.democracylab.org/" target="_blank"> 
-                                          <div class="space" style="background: none">
+                        
+                
+                                          <div class="space" onclick="openDemocracyLab()">
                         <div class="inner">
                             
                             <p class="H2">DemocracyLab</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
-                      </a>
-                                  <a href="https://drive.google.com/file/d/18CTiO3GZq3kAlX5LEPfdpG9L8Q1uWWIP/view?usp=sharing" target="_blank">
-                    <div class="space" style="background: none">
-                        <div class="inner">
-                            
-                            <p class="H2">Beyond</p>
-                            <p class="H3">Digital Design</p>
-                        </div>
-                    </div>
-                      </a>
-                      <a href="https://www.thehouseofmarley.com/" target="_blank">
+                  
+                                 
+                     
+                    
                       
-                                          <div class="space" style="background: none">
+                                          <div class="space" onclick="openMarley()">
                         <div class="inner">
                             
                             <p class="H2">House of Marley</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
-                      </a>
+                     
 
-                                          <div class="space" style="cursor: not-allowed;">
+                                          <div class="space" onclick="openPiestr()">
                         <div class="inner">
                         
                             <p class="H2">Piestr</p>
-                            <p class="H3">Digital Design, Brand Identity</p>
+                            <p class="H3">Brand Identity, Digital Design</p>
                         </div>
                     </div>
-                                  <a href="https://www.behance.net/gallery/71954723/Seattle-Creative-Jam-at-Seattle-Interactive-2018" target="_blank">
-                    <div class="space" style="background: none">
+                                  
+                    <div class="space" onclick="openSignEasy()">
                         <div class="inner" >
-                            <p class="H2">Adobe Cadabra</p>
+                            <p class="H2">Sign Easy</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
-                      </a>
+                     
                       
-                                          <div class="space" style="cursor: not-allowed;">
+<!--
+                                          <div class="space" onclick="openMesserCreations()">
                         <div class="inner">
                          
                             <p class="H2">Messer Creations</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
-                      <a href="https://vpdcalculator.com/" target="_blank">
+-->
+<!--                      <a href="https://vpdcalculator.com/" target="_blank">  </a>-->
                       
-                                          <div class="space" style="background: none">
+<!--
+                                          <div class="space" onclick="openBeDivergent()">
                         <div class="inner">
                         
                             <p class="H2">Be Divergent</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
-                      </a>
-                      <div class="space" style="cursor: not-allowed;">
+-->
+                    
+                      <div class="space" onclick="openMiguel()">
                         <div class="inner">
                           
                             <p class="H2">Miguel Designs</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div> 
-                      <a href="https://validately.com/" target="_blank">
-                                          <div class="space" style="background: none">
+                      
+                                          <div class="space" onclick="openValidately()">
                         <div class="inner">
                             
                             <p class="H2">Validately</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
-                      </a>
-                                          <div class="space" style="cursor: not-allowed;">
+                      
+                                          <div class="space" onclick="openLinq()">
                         <div class="inner">
                            
                             <p class="H2">Linq</p>
@@ -1640,17 +1644,17 @@ Something About Us ©
                         </div>
                     </div>
             
-                                          <div class="space" style="cursor: not-allowed;">
+                                          <div class="space" onclick="openUDSM()">
                         <div class="inner">
                            
-                            <p class="H2">U.D.S.M.</p>
+                            <p class="H2">University District Street Medicine</p>
                             <p class="H3">Digital Design</p>
                         </div>
                     </div>
                       
         
                       
-                       <div class="space" style="cursor: not-allowed;">
+                       <div class="space" onclick="openMoneySpace()">
                         <div class="inner">
                             
                             <p class="H2">Money Space</p>
@@ -1669,7 +1673,7 @@ Something About Us ©
 
                 <div style="padding: 16px" >
                         <video width="100%" preload playsinline autoplay muted loop >
-                        <source src="/videos/designNerds/wemograph.mp4" type="video/mp4" >
+                        <source src="/videos/designNerds/rainbrella.mp4" type="video/mp4" >
                   </video>
                            
                         
@@ -1761,7 +1765,7 @@ Something About Us ©
 
                 <div class="col-1 grid">
                   <div class="spacetitle" style="padding-left: 11px;">
-                      <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%);" >Connect</p>
+                      <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%);" >Contact</p>
                   </div>
                 <div style="padding: 11px">
                     <a href="mailto:adrianpachecodesign@gmail.com" target="_blank"><p class="H3">Email</p></a>
@@ -1772,7 +1776,7 @@ Something About Us ©
                     
                     
                         <button id="audioSwitch" onClick="togglePlay()">
-                            <img src="/images/Off.svg" style="width: 100%" id="play" onclick="change()" >
+                            <img src="/images/On.svg" style="width: 100%" id="play" onclick="change()" >
                         </button>
                     
                     <script>
@@ -1786,12 +1790,12 @@ Something About Us ©
                     var image = document.getElementById('play');
                      
                          if(image_tracker=='Off'){
-                     image.src='/images/On.svg';
+                     image.src='/images/Off.svg';
                         image_tracker='On';
                         }
                      else{
    
-                            image.src='/images/Off.svg';
+                            image.src='/images/On.svg';
                             image_tracker='Off';
                      }
                          
@@ -1914,6 +1918,1461 @@ window.onclick = function(event) {
                                             
             
         </div>
+                              <div id="MoneySpace" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeMoneySpace()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Money Space</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">Mar 2018</p>
+                       
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Location</p>
+                        
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://www.moneyspace.net/" target="_blank"><p class="H3">moneyspace.net</p></a>
+                                            <p class="H3">Bangkok, Thai</p>
+                        
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can an online payment gateway help small online merchants?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">MoneySpace is a Thailand-based online payment gateway that helps small online merchants accept credit cards. I was asked to redesign the landing page that would help customers understand why the businesses exist, how the system integration works, and what value it brings.</p>
+                        </div>
+                    
+                </div>
+                    <div class="row spacetitleXL" style="padding-left: 0px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div>
+
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openMoneySpace() {
+                        document.getElementById("MoneySpace").style.width = "75%";
+                    }
+
+                    function closeMoneySpace() {
+                      document.getElementById("MoneySpace").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="UDSM" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeUDSM()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Universtiy District Street Medicine</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">Nov 2016 - Dec 2016</p>
+                        
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Location</p>
+                         <p class="H2">Team</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                       <p class="H3">Seattle, WA</p>
+                         <p class="H3">Jonathan Li, Morya Breland</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How do we providing quality care for individuals experiencing homelessness?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">University District Street Medicine (UDSM) provides quality care for homelessness in the U-District area. We transformed UDSM's Wix website into a user-friendly experience that informed the community with upcoming events, steps to get involved, and ways to donate to the homeless.</p>
+                        </div>
+                    
+                </div>
+                        <div class="row spacetitleXL" style="padding-left: 0px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div>
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openUDSM() {
+                        document.getElementById("UDSM").style.width = "75%";
+                    }
+
+                    function closeUDSM() {
+                      document.getElementById("UDSM").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="Linq" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeLinq()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Linq</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         <p class="H2">Location</p>
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design, Product Design</p>
+                         <p class="H3">Jan 2016 - March 2016</p>
+                        <p class="H3">Seattle, WA</p>
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Team</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://zhangjoyy.wixsite.com/linq" target="_blank"><p class="H3">zhangjoyy.wixsite.com/linq</p></a>
+                         <p class="H3">Garrett Goody, Chris Leathame, Dylan Stranc, Nicholas Farn, Andrew Towfiq, Joy Zhang, Joseph Lee, Kyle Williams
+
+</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How do you remain connected to your group when phone reception is lost?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">Over the course of 10 weeks, we researched, designed, and prototyped a wearable device that helps friends and families stay in close proximity of each other without the need for the internet. Users are connected offline through haptic feedback and radio-proximity sensors that display the distance between you and others of the group. The wristwatch device is a user-friendly product that pairs with a mobile app to control advanced group settings.</p>
+                        </div>
+                    
+                </div>
+                        <div class="row spacetitleXL" style="padding-left: 0px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div>
+
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openLinq() {
+                        document.getElementById("Linq").style.width = "75%";
+                    }
+
+                    function closeLinq() {
+                      document.getElementById("Linq").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="Validately" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeValidately()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Validately</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                        
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">Oct 2018</p>
+                        
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                          <p class="H2">Location</p> 
+                       
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://validately.com/" target="_blank"><p class="H3">validately.com</p></a>
+                                           <p class="H3">New York, NY (remote)</p>
+                         
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How do you spend less time recruiting test participants and more time on research?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">Validately is helping the world build better products by making it easy to communicate with users in remote testing. During the early stages of the already established product, I was asked to design and prototype the onboarding process using Adobe XD. </p>
+                        </div>
+                    
+                </div>
+           <div class="row spacetitleXL" style="padding-left: 0px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div> 
+
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openValidately() {
+                        document.getElementById("Validately").style.width = "75%";
+                    }
+
+                    function closeValidately() {
+                      document.getElementById("Validately").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+              
+                              <div id="Miguel" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeMiguel()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Miguel Designs</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">May 2017</p>
+                       
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Location</p>
+                         <p class="H2">Website</p>
+                  
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                                            <p class="H3">Seattle, WA</p>
+                         <a href="http://migueldesigns.space/" target="_blank"><p class="H3">migueldesigns.space</p></a>
+                    
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can a website highlight creative work?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">My very good friend and talented graphic designer, Miguel Jimenez, asked me to help him create an online space to display his creative work. The website needed to be built in a way that can be updated & maintained on his own, so I designed a custom website on Squarespace that uses a grid system to highlight project assets on the homepage, like polo shirts, stickers, and business cards.</p>
+                        </div>
+                    
+                </div>
+                                                 <div class="row spacetitleXL" style="padding-left: 0px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div> 
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openMiguel() {
+                        document.getElementById("Miguel").style.width = "75%";
+                    }
+
+                    function closeMiguel() {
+                      document.getElementById("Miguel").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+<!--
+                              <div id="BeDivergent" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeBeDivergent()">
+                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+            
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         <p class="H2">Location</p>
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">2018 - present</p>
+                        <p class="H3">Seattle, WA</p>
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Team</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://drive.google.com/file/d/18CTiO3GZq3kAlX5LEPfdpG9L8Q1uWWIP/view?usp=sharing" target="_blank"><p class="H3">drive.google.com</p></a>
+                         <p class="H3">Justine Edrozo, Kevin Ke, Brooks Lobe</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can real-time crime reports inform commuters about unsafe locations?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">We created an iOS app that leverages real-time Seattle Police Department crime data and community-submitted incident reports. In large cities like Seattle, there are many situations where people feel unsafe when commuting by foot, particularly at night.  While it’s difficult to provide assistance in time to someone who has the misfortune of falling victim to crime, Safely aims to preemptively inform users of dangerous situations before they enter physical proximity of the danger.</p>
+                        </div>
+                    
+                </div>
+                                    <div class="photographer">
+ <video width="100%" style="padding: 16px" preload playsinline autoplay muted loop>
+                        <source src="/videos/beyond.mp4" type="video/mp4" >
+                  </video>
+ 
+                </div>
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openBeDivergent() {
+                        document.getElementById("BeDivergent").style.width = "75%";
+                        
+                    }
+
+                    function closeBeDivergent() {
+                      document.getElementById("BeDivergent").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+-->
+<!--
+                              <div id="MesserCreations" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeMesserCreations()">
+                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Messer Creations</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         <p class="H2">Location</p>
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">2018 - present</p>
+                        <p class="H3">Seattle, WA</p>
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Team</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://drive.google.com/file/d/18CTiO3GZq3kAlX5LEPfdpG9L8Q1uWWIP/view?usp=sharing" target="_blank"><p class="H3">drive.google.com</p></a>
+                         <p class="H3">Justine Edrozo, Kevin Ke, Brooks Lobe</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can real-time crime reports inform commuters about unsafe locations?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">We created an iOS app that leverages real-time Seattle Police Department crime data and community-submitted incident reports. In large cities like Seattle, there are many situations where people feel unsafe when commuting by foot, particularly at night.  While it’s difficult to provide assistance in time to someone who has the misfortune of falling victim to crime, Safely aims to preemptively inform users of dangerous situations before they enter physical proximity of the danger.</p>
+                        </div>
+                    
+                </div>
+                                    <div class="photographer">
+ <video width="100%" style="padding: 16px" preload playsinline autoplay muted loop>
+                        <source src="/videos/beyond.mp4" type="video/mp4" >
+                  </video>
+ 
+                </div>
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openMesserCreations() {
+                        document.getElementById("MesserCreations").style.width = "75%";
+                    }
+
+                    function closeMesserCreations() {
+                      document.getElementById("MesserCreations").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+-->
+                              <div id="SignEasy" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeSignEasy()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Sign Easy</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         <p class="H2">Location</p>
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">Nov 2018</p>
+                        <p class="H3">Seattle, WA</p>
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Event</p>
+                         <p class="H2">Team</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://www.behance.net/gallery/71954723/Seattle-Creative-Jam-at-Seattle-Interactive-2018" target="_blank"><p class="H3">Seattle Interactive 2018</p></a>
+                         <p class="H3">Zachary Lee</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How do you interpret American Sign Language conversations?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">At Seattle Interactive Conference 2018, we were selected to compete in the Adobe Creative Jam competition where teams were given the theme "The Sound" and had 3 hours to design a user-centered product using Adobe XD. We challenged ourselves to quickly prototype a communication tool that translates American Sign Language into text during video chats. At the end of the competition, we presented our product on stage and talked about the potential of helping those that live with the absence of sound. </p>
+                        </div>
+                    
+                </div>
+                                                 <div class="row spacetitleXL" style="padding-left: 0px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div> 
+
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openSignEasy() {
+                        document.getElementById("SignEasy").style.width = "75%";
+                    }
+
+                    function closeSignEasy() {
+                      document.getElementById("SignEasy").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="Piestr" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closePiestr()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Piestr</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">2018 - present</p>
+                       
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                      
+                        <p class="H2">Location</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                 
+                          <p class="H3">Los Angeles, CA (remote)</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can a mobile app take new relationships to the next level? </p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">Piestr seeks to organize your personal information to help enhance new relationships with people nearby. I was asked to create Piestr's brand identity and mobile app in an MVP fashion. </p>
+                        </div>
+                    
+                </div>
+            <div class="row spacetitleXL" style="padding-left: 0px;">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div> 
+   
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openPiestr() {
+                        document.getElementById("Piestr").style.width = "75%";
+                    }
+
+                    function closePiestr() {
+                      document.getElementById("Piestr").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="Marley" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeMarley()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">House of Marley</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">Dec 2017 - April 2018 </p>
+                        
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Location</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://www.thehouseofmarley.com/" target="_blank"><p class="H3">thehouseofmarley.com</p></a>
+                         <p class="H3">Commerce Township, MI (remote)</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can an audio experience support global reforestation?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">House of Marley is built on the principles of superior quality, sustainability and a commitment to charitable causes where proceeds from product sales go to supporting global reforestation through Project Marley. Here, I designed a brand new mobile app that pairs and controls the sound quality to their physical products. I conducted research, created a moodboard, landscaped competitors, transformed wireframes into hi-fidelity prototypes, and performed usability testing.</p>
+                        </div>
+                    
+                </div>
+               <div class="row spacetitleXL" style="padding-left: 0px;">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div>  
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openMarley() {
+                        document.getElementById("Marley").style.width = "75%";
+                    }
+
+                    function closeMarley() {
+                      document.getElementById("Marley").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="DemocracyLab" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeDemocracyLab()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">DemocracyLab</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         <p class="H2">Location</p>
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">Oct 2018 - present</p>
+                        <p class="H3">Seattle, WA</p>
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Team</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://www.democracylab.org" target="_blank"><p class="H3">democracylab.org</p></a>
+                         <p class="H3">Jinna Hagerty, Vera Chuang, Roos Voorend, Megha Gupta, Tristan Hoffmann, Linda Lai, Jessica Lord, Linh Bui</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can connecting skilled volunteers with technology-for-good projects advance civic innovation?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">DemocracyLab is an online infrastructure that empowers the civic technology movement. During my time as the lead designer, I helped optimize the connection between skilled volunteers and technology-for-good projects. I collaborated with researchers, designers, and developers to transform the new platform from a usable MVP to a polished UX. </p>
+                        </div>
+                    
+                </div>
+               <div class="row spacetitleXL" style="padding-left: 0px;">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div>  
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openDemocracyLab() {
+                        document.getElementById("DemocracyLab").style.width = "75%";
+                    }
+
+                    function closeDemocracyLab() {
+                      document.getElementById("DemocracyLab").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="Violet" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeViolet()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Violet</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                        
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Brand Identity, Digital Design</p>
+                         <p class="H3">Oct 2018 - present</p>
+                        
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                          <p class="H2">Location</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="http://www.growviolet.com/" target="_blank"><p class="H3">growviolet.com</p></a>
+                        <p class="H3">Seattle, WA</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can a controlled growing environment shape the future of agriculture?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">Violet is building a healthier world by engineering, manufacturing, and delivering the next generation of high-end agricultural technologies. With an obsession to improving the human-plant relationship, Violet's SpaceGarden helps scientists advance botany and agriculture, making learning about plants more engaging for students, and eliminating the technical and economic barriers for indoor farmers to be successful. At the Seattle-based startup, I'm working on branding and digital design. </p>
+                        </div>
+                    
+                </div>
+               <div class="row spacetitleXL" style="padding-left: 0px;">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div>  
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openViolet() {
+                        document.getElementById("Violet").style.width = "75%";
+                    }
+
+                    function closeViolet() {
+                      document.getElementById("Violet").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                              <div id="Ellia" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeEllia()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Ellia</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                       
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Digital Design</p>
+                         <p class="H3">Jun 2018 - Aug 2018</p>
+                       
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Website</p>
+                         <p class="H2">Location</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                         <a href="https://www.ellia.com/" target="_blank"><p class="H3">ellia.com</p></a>
+                          <p class="H3">Commerce Township, MI (remote)</p>
+                    
+                    </div>
+                    
+                    
+                    
+                    
+                
+                </div>
+                                  
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can essential oils soothe your body and mind?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">Ellia is a line full of premium diffusers and essential oils that help you reduce stress, boost mental clarity, and soothe your body and mind. While at Ellia, I researched, redesigned, and prototyped the mobile app onboarding experience that was causing frustration & confusion to the user. </p>
+                        </div>
+                    
+                </div>
+                                                 <div class="row spacetitleXL" style="padding-left: 0px;">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div> 
+
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openEllia() {
+                        document.getElementById("Ellia").style.width = "75%";
+                    }
+
+                    function closeEllia() {
+                      document.getElementById("Ellia").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
+                <div id="Beyond" class="project">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeBeyond()">
+<!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
+                      
+                    <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
+                        
+                        <div class="spacetitle" id="back"style="width: 100%">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
+                        
+                        </div>   
+                    </div>
+                      </a>
+                  
+
+                
+               
+
+                
+                
+                <div class="row" style="padding-top: 16px">
+                        <div class="col">
+                        <p class="H1">Beyond</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="row box">
+                    <div class="col-1">
+                       <p class="H2">Discipline</p>
+                        <p class="H2">Year</p>
+                         
+               
+                    
+                    </div>
+                     <div class="col-3">
+                       <p class="H3">Brand Identity, Digital Design</p>
+                         <p class="H3">2018 - present</p>
+                        
+           
+                    
+                    </div>
+                    <div class="col-1">
+        
+                    
+                    </div>
+                     <div class="col-1">
+                         <p class="H2">Location</p>
+                      
+                    
+                    </div>
+                                       <div class="col-4">
+                <p class="H3">Seattle, WA</p>
+                    
+                    </div>
+                    
+                    
+                    
+                
+                </div>
+              
+                    
+                    
+                            <div class="row" style="border-bottom-style: solid;
+        border-width: 1px; ">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <p class="H1">How can an interactive experience bring visibility to all the human connections you've ever made?</p>
+            </marquee>
+
+        </div>
+                  <div class="row box">
+                    <div class="col-7">
+                    <p class="H2">Beyond is a concept inspired by the beauty of the cosmos. The interactive experience represents you as a star existing among a galaxy full of people you care about and those yet to be discovered. I designed Beyond in a way to help you visualize all the human connections you've ever made within your lifetime. </p>
+                        </div>
+                    
+                </div>
+                                    <div class="photographer">
+ <video width="100%" style="padding: 16px" preload playsinline autoplay muted loop>
+                        <source src="/videos/beyond.mp4" type="video/mp4" >
+                  </video>
+ 
+                </div>
+               <div class="row spacetitleXL" style="padding-left: 0px; border-top-style: solid; border-top-width: 1px">
+                                
+                    <div class="col-4" >
+                        <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%)">More coming soon...</p>
+                    
+                    </div>
+
+  
+              </div>  
+              </div>
+                            <script type="text/javascript">
+    
+
+                    function openBeyond() {
+                        document.getElementById("Beyond").style.width = "75%";
+                    }
+
+                    function closeBeyond() {
+                      document.getElementById("Beyond").style.width = "0";
+                    }
+                  
+                        
+
+
+                </script>
               <div id="Safely" class="project">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeSafely()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->

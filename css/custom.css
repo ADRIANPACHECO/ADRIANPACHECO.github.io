@@ -574,7 +574,7 @@ font-size: 20px;
         width: 0; 
         left: 25%;
          background-color: white;
-        transition: 1s ease;
+        transition: 1s ease-out;
     
         overflow-x: hidden;
         
@@ -974,11 +974,16 @@ font-style: normal;
     }
     
     .space:hover {
-        background: url("/images/list_img.svg");
+        background-color: #f7f7f7;
         height: 88px;
         transition: .2s ease-in-out;
- 
+        cursor: pointer;
        
+    }
+    
+    .space:active {
+        background-color: transparent;
+        
     }
     
     .featuredSpace {
@@ -995,6 +1000,9 @@ font-style: normal;
         .featured {
         cursor: pointer;
         height: 80vh;
+    }
+            .featured:hover {
+        background-color: #f7f7f7;
     }
     
         .inner {
