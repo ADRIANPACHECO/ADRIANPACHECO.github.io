@@ -56,6 +56,17 @@ Something About Us ©
     </script>
     
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/53a0c9cae58f444a1e77551bf/7ef77d6cc8c378b0f7c47f999.js");</script>
+    <!-- Hotjar Tracking Code for http://adrianpacheco.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1378487,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
 </head>
     <audio id="myAudio" preload="auto" >
@@ -67,7 +78,7 @@ Something About Us ©
     
         <script>
         if ($(window).width() < 768) {
-            alert("Hey there, it's Adrian! Just letting you know that my site is not compatible on mobile devices just yet. I'm in the process of creating a mobile 'controller' that can interact with my site. Pretty cool right?");
+            alert("Hi there! Just letting you know that my site is not compatible on mobile devices or tablets just yet...I'm building a 'controller' that pairs and interacts with the desktop experience. -Adrian");
                        
         }
         
@@ -210,23 +221,26 @@ Something About Us ©
             m = n.getMonth() + 1;
             d = n.getDate();
                                                 day = d;
-                        if (d === 2 || d === 9 || d === 16 || d === 23 || d === 30){
+                        if (d === 7 || d === 14 || d === 21 || d === 30){
                             day = "Sunday";
-                        } else if (d === 3 || d === 10 || d === 17 || d === 24) {
+                        } else if (d === 1 || d === 8 || d === 15 || d === 22) {
                             day = "Monday";
-                        } else if (d === 4 || d === 11 || d === 18 || d === 25) {
+                        } else if (d === 2 || d === 9 || d === 16 || d === 23) {
                             day = "Tuesday";
                         }
-                        else if (d === 5 || d === 12 || d === 19 || d === 26) {
+                        else if (d === 3 || d === 10 || d === 17 || d === 24) {
                             day = "Wednesday";
                         }
-                        else if (d === 6 || d === 13 || d === 20 || d === 27) {
+                        else if (d === 4 || d === 11 || d === 18 || d === 25) {
                             day = "Thursday";
                         }
-                        else if (d === 7 || d === 14 || d === 21 || d === 28) {
+                        else if (d === 5 || d === 12 || d === 19 || d === 26 || d === 28) {
                             day = "Friday";
-                        } else if (d === 8 || d === 15 || d === 22 || d === 29) {
+                        } else if (d === 6 || d === 13 || d === 20 || d === 27 || d === 29 ) {
                              day = "Saturday";
+                        } else if (d === 31)  {
+                             d = 1;
+                            day = "Monday";
                         } 
 
                        var month = new Array();
@@ -246,7 +260,7 @@ Something About Us ©
                         document.getElementById("date").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                         
             if (d === 1) {
-                    document.getElementById("test").innerHTML = "Waning Crescent - 19% Illumination";
+                    document.getElementById("test").innerHTML = "Waning Crescent - 2% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -256,16 +270,6 @@ Something About Us ©
 
                 
             } else if (d === 2) {
-                    document.getElementById("test").innerHTML = "Waning Crescent - 1% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
-                        document.getElementById("demo").appendChild(img);
-            };
-
-                
-            } else if (d === 3) {
                     document.getElementById("test").innerHTML = "New Moon - 0% Illumination";
                     findImg(d);
                     function findImg(d) {
@@ -275,8 +279,17 @@ Something About Us ©
             };
 
                 
-            } else if (d === 4) {
+            } else if (d === 3) {
                     document.getElementById("test").innerHTML = "Waxing Crescent - 1% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
+                        document.getElementById("demo").appendChild(img);
+
+             };   
+            } else if (d === 4) {
+                    document.getElementById("test").innerHTML = "Waxing Crescent - 4% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -286,7 +299,7 @@ Something About Us ©
 
                 
             } else if (d === 5) {
-                    document.getElementById("test").innerHTML = "Waxing Crescent - 5% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Crescent - 10% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -296,7 +309,7 @@ Something About Us ©
 
                 
             } else if (d === 6) {
-                    document.getElementById("test").innerHTML = "Waxing Crescent - 12% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Crescent - 18% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -305,7 +318,7 @@ Something About Us ©
             };
         
             } else if (d === 7) {
-                    document.getElementById("test").innerHTML = "Waxing Crescent - 20% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Crescent - 28% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -315,7 +328,7 @@ Something About Us ©
 
                 
             } else if (d === 8) {
-                    document.getElementById("test").innerHTML = "Waxing Crescent - 30% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Crescent - 39% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -325,17 +338,7 @@ Something About Us ©
 
                 
             } else if (d === 9) {
-                    document.getElementById("test").innerHTML = "Waxing Crescent - 42% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
-                        document.getElementById("demo").appendChild(img);
-            };
-
-                
-            } else if (d === 10) {
-                    document.getElementById("test").innerHTML = "First Quarter - 53% Illumination";
+                    document.getElementById("test").innerHTML = "First Quarter - 51% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -344,8 +347,18 @@ Something About Us ©
             };
 
                 
+            } else if (d === 10) {
+                    document.getElementById("test").innerHTML = "Waxing Gibbous - 62% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
+                        document.getElementById("demo").appendChild(img);
+            };
+
+                
             } else if (d === 11) {
-                    document.getElementById("test").innerHTML = "Waxing Gibbous - 64% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Gibbous - 72% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -355,7 +368,7 @@ Something About Us ©
 
                 
             } else if (d === 12) {
-                    document.getElementById("test").innerHTML = "Waxing Gibbous - 75% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Gibbous - 81% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -365,7 +378,7 @@ Something About Us ©
 
                 
             } else if (d === 13) {
-                    document.getElementById("test").innerHTML = "Waxing Gibbous - 84% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Gibbous - 89% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -375,7 +388,7 @@ Something About Us ©
 
                 
             } else if (d === 14) {
-                    document.getElementById("test").innerHTML = "Waxing Gibbous - 91% Illumination";
+                    document.getElementById("test").innerHTML = "Waxing Gibbous - 94% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -385,7 +398,7 @@ Something About Us ©
 
                 
             }  else if (d === 15) {
-                document.getElementById("test").innerHTML = "Waxing Gibbous - 96% Illumination";
+                document.getElementById("test").innerHTML = "Waxing Gibbous - 98% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -394,23 +407,23 @@ Something About Us ©
                 };    
             } 
              else if (d === 16) {
-                document.getElementById("test").innerHTML = "Waxing Gibbous - 99% Illumination";
-                findImg(d);
-                 function findImg(d) {
-                    var img = new Image(48,48);
-                    img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
-                    document.getElementById("demo").appendChild(img);
-                };    
-            } else if (d === 17) {
                 document.getElementById("test").innerHTML = "Full Moon - 100% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
                     img.src = "/images/moon/full-LucaCarbone@2x.png";
                     document.getElementById("demo").appendChild(img);
-                };    
+                };   
+            } else if (d === 17) {
+                document.getElementById("test").innerHTML = "Waning Gibbous - 100% Illumination";
+                findImg(d);
+                function findImg(d) {
+                    var img = new Image(48,48);
+                    img.src = "/images/moon/wanGib-LucaCarbone@2x.png";
+                    document.getElementById("demo").appendChild(img);
+                };     
             } else if (d === 18) {
-                document.getElementById("test").innerHTML = "Waning Gibbous - 99% Illumination";
+                document.getElementById("test").innerHTML = "Waning Gibbous - 98% Illumination";
                 findImg(d);
                 function findImg(d) {
                     var img = new Image(48,48);
@@ -418,7 +431,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 19) {
-                document.getElementById("test").innerHTML = "Waning Gibbous - 95% Illumination";
+                document.getElementById("test").innerHTML = "Waning Gibbous - 94% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -426,7 +439,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 20) {
-                document.getElementById("test").innerHTML = "Waning Gibbous - 90% Illumination";
+                document.getElementById("test").innerHTML = "Waning Gibbous - 88% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -434,7 +447,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 21) {
-                document.getElementById("test").innerHTML = "Waning Gibbous - 84% Illumination";
+                document.getElementById("test").innerHTML = "Waning Gibbous - 82% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -442,7 +455,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 22) {
-                document.getElementById("test").innerHTML = "Waning Gibbous - 76% Illumination";
+                document.getElementById("test").innerHTML = "Waning Gibbous - 74% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -450,7 +463,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 23) {
-                document.getElementById("test").innerHTML = "Waning Gibbous - 68% Illumination";
+                document.getElementById("test").innerHTML = "Waning Gibbous - 65% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -458,7 +471,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 24) {
-                document.getElementById("test").innerHTML = "Waning Gibbous  - 59% Illumination";
+                document.getElementById("test").innerHTML = "Waning Gibbous  - 55% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -466,7 +479,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 25) {
-                document.getElementById("test").innerHTML = "Last Quarter - 49% Illumination";
+                document.getElementById("test").innerHTML = "Last Quarter - 46% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -474,7 +487,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 26) {
-                document.getElementById("test").innerHTML = "Waning Crescent - 39% Illumination";
+                document.getElementById("test").innerHTML = "Waning Crescent - 36% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -482,7 +495,7 @@ Something About Us ©
                     document.getElementById("demo").appendChild(img);
                 };    
             } else if (d === 27) {
-                document.getElementById("test").innerHTML = "Waning Crescent - 30% Illumination";
+                document.getElementById("test").innerHTML = "Waning Crescent - 26% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -543,23 +556,26 @@ Something About Us ©
                         
                         
                                                                         day = d;
-                        if (d === 2 || d === 9 || d === 16 || d === 23 || d === 30){
+if (d === 7 || d === 14 || d === 21 || d === 30){
                             day = "Sunday";
-                        } else if (d === 3 || d === 10 || d === 17 || d === 24) {
+                        } else if (d === 1 || d === 8 || d === 15 || d === 22) {
                             day = "Monday";
-                        } else if (d === 4 || d === 11 || d === 18 || d === 25) {
+                        } else if (d === 2 || d === 9 || d === 16 || d === 23) {
                             day = "Tuesday";
                         }
-                        else if (d === 5 || d === 12 || d === 19 || d === 26) {
+                        else if (d === 3 || d === 10 || d === 17 || d === 24) {
                             day = "Wednesday";
                         }
-                        else if (d === 6 || d === 13 || d === 20 || d === 27) {
+                        else if (d === 4 || d === 11 || d === 18 || d === 25) {
                             day = "Thursday";
                         }
-                        else if (d === 7 || d === 14 || d === 21 || d === 28) {
+                        else if (d === 5 || d === 12 || d === 19 || d === 26 || d === 28) {
                             day = "Friday";
-                        } else if (d === 8 || d === 15 || d === 22 || d === 29) {
+                        } else if (d === 6 || d === 13 || d === 20 || d === 27 || d === 29 ) {
                              day = "Saturday";
+                        } else if (d === 31)  {
+                             d = 1;
+                            day = "Monday";
                         } 
                         
                       
@@ -580,8 +596,8 @@ Something About Us ©
 
                         document.getElementById("date2").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                        
-           if (d === 1) {
-                    document.getElementById("test2").innerHTML = "Waning Crescent - 19% Illumination";
+             if (d === 1) {
+                    document.getElementById("test2").innerHTML = "Waning Crescent - 2% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -591,16 +607,6 @@ Something About Us ©
 
                 
             } else if (d === 2) {
-                    document.getElementById("test2").innerHTML = "Waning Crescent - 1% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
-                        document.getElementById("demo2").appendChild(img);
-            };
-
-                
-            } else if (d === 3) {
                     document.getElementById("test2").innerHTML = "New Moon - 0% Illumination";
                     findImg(d);
                     function findImg(d) {
@@ -610,8 +616,18 @@ Something About Us ©
             };
 
                 
-            } else if (d === 4) {
+            } else if (d === 3) {
                     document.getElementById("test2").innerHTML = "Waxing Crescent - 1% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
+                        document.getElementById("demo2").appendChild(img);
+            }; 
+
+                
+            } else if (d === 4) {
+                    document.getElementById("test2").innerHTML = "Waxing Crescent - 4% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -621,7 +637,7 @@ Something About Us ©
 
                 
             } else if (d === 5) {
-                    document.getElementById("test2").innerHTML = "Waxing Crescent - 5% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Crescent - 10% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -631,7 +647,7 @@ Something About Us ©
 
                 
             } else if (d === 6) {
-                    document.getElementById("test2").innerHTML = "Waxing Crescent - 12% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Crescent - 18% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -640,7 +656,7 @@ Something About Us ©
             };
         
             } else if (d === 7) {
-                    document.getElementById("test2").innerHTML = "Waxing Crescent - 20% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Crescent - 28% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -650,7 +666,7 @@ Something About Us ©
 
                 
             } else if (d === 8) {
-                    document.getElementById("test2").innerHTML = "Waxing Crescent - 30% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Crescent - 39% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -660,17 +676,7 @@ Something About Us ©
 
                 
             } else if (d === 9) {
-                    document.getElementById("test2").innerHTML = "Waxing Crescent - 42% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
-                        document.getElementById("demo2").appendChild(img);
-            };
-
-                
-            } else if (d === 10) {
-                    document.getElementById("test2").innerHTML = "First Quarter - 53% Illumination";
+                    document.getElementById("test2").innerHTML = "First Quarter - 51% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -679,8 +685,18 @@ Something About Us ©
             };
 
                 
+            } else if (d === 10) {
+                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 62% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
+                        document.getElementById("demo2").appendChild(img);
+            };
+
+                
             } else if (d === 11) {
-                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 64% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 72% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -690,7 +706,7 @@ Something About Us ©
 
                 
             } else if (d === 12) {
-                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 75% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 81% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -700,7 +716,7 @@ Something About Us ©
 
                 
             } else if (d === 13) {
-                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 84% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 89% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -710,7 +726,7 @@ Something About Us ©
 
                 
             } else if (d === 14) {
-                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 91% Illumination";
+                    document.getElementById("test2").innerHTML = "Waxing Gibbous - 94% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -720,7 +736,7 @@ Something About Us ©
 
                 
             }  else if (d === 15) {
-                document.getElementById("test2").innerHTML = "Waxing Gibbous - 96% Illumination";
+                document.getElementById("test2").innerHTML = "Waxing Gibbous - 98% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -729,23 +745,23 @@ Something About Us ©
                 };    
             } 
              else if (d === 16) {
-                document.getElementById("test2").innerHTML = "Waxing Gibbous - 99% Illumination";
-                findImg(d);
-                 function findImg(d) {
-                    var img = new Image(48,48);
-                    img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
-                    document.getElementById("demo2").appendChild(img);
-                };    
-            } else if (d === 17) {
                 document.getElementById("test2").innerHTML = "Full Moon - 100% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
                     img.src = "/images/moon/full-LucaCarbone@2x.png";
                     document.getElementById("demo2").appendChild(img);
-                };    
+                };   
+            } else if (d === 17) {
+                document.getElementById("test2").innerHTML = "Waning Gibbous - 100% Illumination";
+                findImg(d);
+                function findImg(d) {
+                    var img = new Image(48,48);
+                    img.src = "/images/moon/wanGib-LucaCarbone@2x.png";
+                    document.getElementById("demo2").appendChild(img);
+                };     
             } else if (d === 18) {
-                document.getElementById("test2").innerHTML = "Waning Gibbous - 99% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Gibbous - 98% Illumination";
                 findImg(d);
                 function findImg(d) {
                     var img = new Image(48,48);
@@ -753,7 +769,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 19) {
-                document.getElementById("test2").innerHTML = "Waning Gibbous - 95% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Gibbous - 94% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -761,7 +777,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 20) {
-                document.getElementById("test2").innerHTML = "Waning Gibbous - 90% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Gibbous - 88% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -769,7 +785,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 21) {
-                document.getElementById("test2").innerHTML = "Waning Gibbous - 84% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Gibbous - 82% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -777,7 +793,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 22) {
-                document.getElementById("test2").innerHTML = "Waning Gibbous - 76% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Gibbous - 74% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -785,7 +801,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 23) {
-                document.getElementById("test2").innerHTML = "Waning Gibbous - 68% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Gibbous - 65% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -793,7 +809,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 24) {
-                document.getElementById("test2").innerHTML = "Waning Gibbous  - 59% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Gibbous  - 55% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -801,7 +817,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 25) {
-                document.getElementById("test2").innerHTML = "Last Quarter - 49% Illumination";
+                document.getElementById("test2").innerHTML = "Last Quarter - 46% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -809,7 +825,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 26) {
-                document.getElementById("test2").innerHTML = "Waning Crescent - 39% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Crescent - 36% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -817,7 +833,7 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } else if (d === 27) {
-                document.getElementById("test2").innerHTML = "Waning Crescent - 30% Illumination";
+                document.getElementById("test2").innerHTML = "Waning Crescent - 26% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -850,8 +866,6 @@ Something About Us ©
                     document.getElementById("demo2").appendChild(img);
                 };    
             } 
-       
-                    
                     </script>
             </div>
  
@@ -873,23 +887,26 @@ Something About Us ©
                         m = n.getMonth() + 1;
                         d = n.getDate() + 2;
                                                                         day = d;
-                        if (d === 2 || d === 9 || d === 16 || d === 23 || d === 30){
+if (d === 7 || d === 14 || d === 21 || d === 30){
                             day = "Sunday";
-                        } else if (d === 3 || d === 10 || d === 17 || d === 24) {
+                        } else if (d === 1 || d === 8 || d === 15 || d === 22) {
                             day = "Monday";
-                        } else if (d === 4 || d === 11 || d === 18 || d === 25) {
+                        } else if (d === 2 || d === 9 || d === 16 || d === 23) {
                             day = "Tuesday";
                         }
-                        else if (d === 5 || d === 12 || d === 19 || d === 26) {
+                        else if (d === 3 || d === 10 || d === 17 || d === 24) {
                             day = "Wednesday";
                         }
-                        else if (d === 6 || d === 13 || d === 20 || d === 27) {
+                        else if (d === 4 || d === 11 || d === 18 || d === 25) {
                             day = "Thursday";
                         }
-                        else if (d === 7 || d === 14 || d === 21 || d === 28) {
+                        else if (d === 5 || d === 12 || d === 19 || d === 26 || d === 28) {
                             day = "Friday";
-                        } else if (d === 8 || d === 15 || d === 22 || d === 29) {
+                        } else if (d === 6 || d === 13 || d === 20 || d === 27 || d === 29 ) {
                              day = "Saturday";
+                        } else if (d === 31)  {
+                             d = 1;
+                            day = "Monday";
                         } 
 
                        var month = new Array();
@@ -908,8 +925,8 @@ Something About Us ©
 
                         document.getElementById("date3").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                         
-            if (d === 1) {
-                    document.getElementById("test3").innerHTML = "Waning Crescent - 19% Illumination";
+             if (d === 1) {
+                    document.getElementById("test3").innerHTML = "Waning Crescent - 2% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -919,16 +936,6 @@ Something About Us ©
 
                 
             } else if (d === 2) {
-                    document.getElementById("test3").innerHTML = "Waning Crescent - 1% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
-                        document.getElementById("demo3").appendChild(img);
-            };
-
-                
-            } else if (d === 3) {
                     document.getElementById("test3").innerHTML = "New Moon - 0% Illumination";
                     findImg(d);
                     function findImg(d) {
@@ -938,8 +945,17 @@ Something About Us ©
             };
 
                 
-            } else if (d === 4) {
+            } else if (d === 3) {
                     document.getElementById("test3").innerHTML = "Waxing Crescent - 1% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
+                        document.getElementById("demo3").appendChild(img);
+
+             };  
+            } else if (d === 4) {
+                    document.getElementById("test3").innerHTML = "Waxing Crescent - 4% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -949,7 +965,7 @@ Something About Us ©
 
                 
             } else if (d === 5) {
-                    document.getElementById("test3").innerHTML = "Waxing Crescent - 5% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Crescent - 10% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -959,7 +975,7 @@ Something About Us ©
 
                 
             } else if (d === 6) {
-                    document.getElementById("test3").innerHTML = "Waxing Crescent - 12% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Crescent - 18% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -968,7 +984,7 @@ Something About Us ©
             };
         
             } else if (d === 7) {
-                    document.getElementById("test3").innerHTML = "Waxing Crescent - 20% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Crescent - 28% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -978,7 +994,7 @@ Something About Us ©
 
                 
             } else if (d === 8) {
-                    document.getElementById("test3").innerHTML = "Waxing Crescent - 30% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Crescent - 39% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -988,17 +1004,7 @@ Something About Us ©
 
                 
             } else if (d === 9) {
-                    document.getElementById("test3").innerHTML = "Waxing Crescent - 42% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
-                        document.getElementById("demo3").appendChild(img);
-            };
-
-                
-            } else if (d === 10) {
-                    document.getElementById("test3").innerHTML = "First Quarter - 53% Illumination";
+                    document.getElementById("test3").innerHTML = "First Quarter - 51% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1007,8 +1013,18 @@ Something About Us ©
             };
 
                 
+            } else if (d === 10) {
+                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 62% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
+                        document.getElementById("demo3").appendChild(img);
+            };
+
+                
             } else if (d === 11) {
-                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 64% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 72% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1018,7 +1034,7 @@ Something About Us ©
 
                 
             } else if (d === 12) {
-                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 75% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 81% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1028,7 +1044,7 @@ Something About Us ©
 
                 
             } else if (d === 13) {
-                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 84% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 89% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1038,7 +1054,7 @@ Something About Us ©
 
                 
             } else if (d === 14) {
-                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 91% Illumination";
+                    document.getElementById("test3").innerHTML = "Waxing Gibbous - 94% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1048,7 +1064,7 @@ Something About Us ©
 
                 
             }  else if (d === 15) {
-                document.getElementById("test3").innerHTML = "Waxing Gibbous - 96% Illumination";
+                document.getElementById("test3").innerHTML = "Waxing Gibbous - 98% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1057,23 +1073,23 @@ Something About Us ©
                 };    
             } 
              else if (d === 16) {
-                document.getElementById("test3").innerHTML = "Waxing Gibbous - 99% Illumination";
-                findImg(d);
-                 function findImg(d) {
-                    var img = new Image(48,48);
-                    img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
-                    document.getElementById("demo3").appendChild(img);
-                };    
-            } else if (d === 17) {
                 document.getElementById("test3").innerHTML = "Full Moon - 100% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
                     img.src = "/images/moon/full-LucaCarbone@2x.png";
                     document.getElementById("demo3").appendChild(img);
-                };    
+                };   
+            } else if (d === 17) {
+                document.getElementById("test3").innerHTML = "Waning Gibbous - 100% Illumination";
+                findImg(d);
+                function findImg(d) {
+                    var img = new Image(48,48);
+                    img.src = "/images/moon/wanGib-LucaCarbone@2x.png";
+                    document.getElementById("demo3").appendChild(img);
+                };     
             } else if (d === 18) {
-                document.getElementById("test3").innerHTML = "Waning Gibbous - 99% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Gibbous - 98% Illumination";
                 findImg(d);
                 function findImg(d) {
                     var img = new Image(48,48);
@@ -1081,7 +1097,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 19) {
-                document.getElementById("test3").innerHTML = "Waning Gibbous - 95% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Gibbous - 94% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1089,7 +1105,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 20) {
-                document.getElementById("test3").innerHTML = "Waning Gibbous - 90% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Gibbous - 88% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1097,7 +1113,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 21) {
-                document.getElementById("test3").innerHTML = "Waning Gibbous - 84% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Gibbous - 82% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1105,7 +1121,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 22) {
-                document.getElementById("test3").innerHTML = "Waning Gibbous - 76% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Gibbous - 74% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1113,7 +1129,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 23) {
-                document.getElementById("test3").innerHTML = "Waning Gibbous - 68% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Gibbous - 65% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1121,7 +1137,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 24) {
-                document.getElementById("test3").innerHTML = "Waning Gibbous  - 59% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Gibbous  - 55% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1129,7 +1145,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 25) {
-                document.getElementById("test3").innerHTML = "Last Quarter - 49% Illumination";
+                document.getElementById("test3").innerHTML = "Last Quarter - 46% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1137,7 +1153,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 26) {
-                document.getElementById("test3").innerHTML = "Waning Crescent - 39% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Crescent - 36% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1145,7 +1161,7 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } else if (d === 27) {
-                document.getElementById("test3").innerHTML = "Waning Crescent - 30% Illumination";
+                document.getElementById("test3").innerHTML = "Waning Crescent - 26% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1178,7 +1194,6 @@ Something About Us ©
                     document.getElementById("demo3").appendChild(img);
                 };    
             } 
-          
                     </script>
             </div>
  
@@ -1200,23 +1215,26 @@ Something About Us ©
                         m = n.getMonth() + 1;
                         d = n.getDate() + 3;
                                                                         day = d;
-                        if (d === 2 || d === 9 || d === 16 || d === 23 || d === 30){
+if (d === 7 || d === 14 || d === 21 || d === 30){
                             day = "Sunday";
-                        } else if (d === 3 || d === 10 || d === 17 || d === 24) {
+                        } else if (d === 1 || d === 8 || d === 15 || d === 22) {
                             day = "Monday";
-                        } else if (d === 4 || d === 11 || d === 18 || d === 25) {
+                        } else if (d === 2 || d === 9 || d === 16 || d === 23) {
                             day = "Tuesday";
                         }
-                        else if (d === 5 || d === 12 || d === 19 || d === 26) {
+                        else if (d === 3 || d === 10 || d === 17 || d === 24) {
                             day = "Wednesday";
                         }
-                        else if (d === 6 || d === 13 || d === 20 || d === 27) {
+                        else if (d === 4 || d === 11 || d === 18 || d === 25) {
                             day = "Thursday";
                         }
-                        else if (d === 7 || d === 14 || d === 21 || d === 28) {
+                        else if (d === 5 || d === 12 || d === 19 || d === 26 || d === 28) {
                             day = "Friday";
-                        } else if (d === 8 || d === 15 || d === 22 || d === 29) {
+                        } else if (d === 6 || d === 13 || d === 20 || d === 27 || d === 29 ) {
                              day = "Saturday";
+                        } else if (d === 31)  {
+                             d = 1;
+                            day = "Monday";
                         } 
                         
                        var month = new Array();
@@ -1235,8 +1253,8 @@ Something About Us ©
 
                         document.getElementById("date4").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                         
-            if (d === 1) {
-                    document.getElementById("test4").innerHTML = "Waning Crescent - 19% Illumination";
+             if (d === 1) {
+                    document.getElementById("test4").innerHTML = "Waning Crescent - 2% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1246,16 +1264,6 @@ Something About Us ©
 
                 
             } else if (d === 2) {
-                    document.getElementById("test4").innerHTML = "Waning Crescent - 1% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
-                        document.getElementById("demo4").appendChild(img);
-            };
-
-                
-            } else if (d === 3) {
                     document.getElementById("test4").innerHTML = "New Moon - 0% Illumination";
                     findImg(d);
                     function findImg(d) {
@@ -1265,8 +1273,17 @@ Something About Us ©
             };
 
                 
-            } else if (d === 4) {
+            } else if (d === 3) {
                     document.getElementById("test4").innerHTML = "Waxing Crescent - 1% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
+                        document.getElementById("demo4").appendChild(img);
+
+              };    
+            } else if (d === 4) {
+                    document.getElementById("test4").innerHTML = "Waxing Crescent - 4% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1276,7 +1293,7 @@ Something About Us ©
 
                 
             } else if (d === 5) {
-                    document.getElementById("test4").innerHTML = "Waxing Crescent - 5% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Crescent - 10% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1286,7 +1303,7 @@ Something About Us ©
 
                 
             } else if (d === 6) {
-                    document.getElementById("test4").innerHTML = "Waxing Crescent - 12% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Crescent - 18% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1295,7 +1312,7 @@ Something About Us ©
             };
         
             } else if (d === 7) {
-                    document.getElementById("test4").innerHTML = "Waxing Crescent - 20% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Crescent - 28% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1305,7 +1322,7 @@ Something About Us ©
 
                 
             } else if (d === 8) {
-                    document.getElementById("test4").innerHTML = "Waxing Crescent - 30% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Crescent - 39% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1315,17 +1332,7 @@ Something About Us ©
 
                 
             } else if (d === 9) {
-                    document.getElementById("test4").innerHTML = "Waxing Crescent - 42% Illumination";
-                    findImg(d);
-                    function findImg(d) {
-                        var img = new Image(48,48);
-                        img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
-                        document.getElementById("demo4").appendChild(img);
-            };
-
-                
-            } else if (d === 10) {
-                    document.getElementById("test4").innerHTML = "First Quarter - 53% Illumination";
+                    document.getElementById("test4").innerHTML = "First Quarter - 51% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1334,8 +1341,18 @@ Something About Us ©
             };
 
                 
+            } else if (d === 10) {
+                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 62% Illumination";
+                    findImg(d);
+                    function findImg(d) {
+                        var img = new Image(48,48);
+                        img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
+                        document.getElementById("demo4").appendChild(img);
+            };
+
+                
             } else if (d === 11) {
-                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 64% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 72% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1345,7 +1362,7 @@ Something About Us ©
 
                 
             } else if (d === 12) {
-                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 75% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 81% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1355,7 +1372,7 @@ Something About Us ©
 
                 
             } else if (d === 13) {
-                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 84% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 89% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1365,7 +1382,7 @@ Something About Us ©
 
                 
             } else if (d === 14) {
-                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 91% Illumination";
+                    document.getElementById("test4").innerHTML = "Waxing Gibbous - 94% Illumination";
                     findImg(d);
                     function findImg(d) {
                         var img = new Image(48,48);
@@ -1375,7 +1392,7 @@ Something About Us ©
 
                 
             }  else if (d === 15) {
-                document.getElementById("test4").innerHTML = "Waxing Gibbous - 96% Illumination";
+                document.getElementById("test4").innerHTML = "Waxing Gibbous - 98% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1384,23 +1401,23 @@ Something About Us ©
                 };    
             } 
              else if (d === 16) {
-                document.getElementById("test4").innerHTML = "Waxing Gibbous - 99% Illumination";
-                findImg(d);
-                 function findImg(d) {
-                    var img = new Image(48,48);
-                    img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
-                    document.getElementById("demo4").appendChild(img);
-                };    
-            } else if (d === 17) {
                 document.getElementById("test4").innerHTML = "Full Moon - 100% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
                     img.src = "/images/moon/full-LucaCarbone@2x.png";
                     document.getElementById("demo4").appendChild(img);
-                };    
+                };   
+            } else if (d === 17) {
+                document.getElementById("test4").innerHTML = "Waning Gibbous - 100% Illumination";
+                findImg(d);
+                function findImg(d) {
+                    var img = new Image(48,48);
+                    img.src = "/images/moon/wanGib-LucaCarbone@2x.png";
+                    document.getElementById("demo4").appendChild(img);
+                };     
             } else if (d === 18) {
-                document.getElementById("test4").innerHTML = "Waning Gibbous - 99% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Gibbous - 98% Illumination";
                 findImg(d);
                 function findImg(d) {
                     var img = new Image(48,48);
@@ -1408,7 +1425,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 19) {
-                document.getElementById("test4").innerHTML = "Waning Gibbous - 95% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Gibbous - 94% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1416,7 +1433,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 20) {
-                document.getElementById("test4").innerHTML = "Waning Gibbous - 90% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Gibbous - 88% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1424,7 +1441,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 21) {
-                document.getElementById("test4").innerHTML = "Waning Gibbous - 84% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Gibbous - 82% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1432,7 +1449,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 22) {
-                document.getElementById("test4").innerHTML = "Waning Gibbous - 76% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Gibbous - 74% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1440,7 +1457,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 23) {
-                document.getElementById("test4").innerHTML = "Waning Gibbous - 68% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Gibbous - 65% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1448,7 +1465,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 24) {
-                document.getElementById("test4").innerHTML = "Waning Gibbous  - 59% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Gibbous  - 55% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1456,7 +1473,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 25) {
-                document.getElementById("test4").innerHTML = "Last Quarter - 49% Illumination";
+                document.getElementById("test4").innerHTML = "Last Quarter - 46% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1464,7 +1481,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 26) {
-                document.getElementById("test4").innerHTML = "Waning Crescent - 39% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Crescent - 36% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1472,7 +1489,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } else if (d === 27) {
-                document.getElementById("test4").innerHTML = "Waning Crescent - 30% Illumination";
+                document.getElementById("test4").innerHTML = "Waning Crescent - 26% Illumination";
                 findImg(d);
                  function findImg(d) {
                     var img = new Image(48,48);
@@ -1505,7 +1522,7 @@ Something About Us ©
                     document.getElementById("demo4").appendChild(img);
                 };    
             } 
-                                                                       
+                                   
                     </script>
             </div>
  
@@ -1525,8 +1542,7 @@ Something About Us ©
               <div class="col-md-3 grid" >
                   <div class="about">
                             
-                      <p class="H2">My name's Adrian and I'm a Seattle-based Designer focused on user experience and visual identity. I currently design digital experiences as a freelancer.  
-                            <span style="font-style: italic; font-weight: 400" >This site is under construction...</span>
+                      <p class="H2">Hi there! I'm Adrian. I'm a Seattle-based freelance designer focused on user experience and user interface design. I'm interested in getting to know those who drop by, so take a look around and shoot me a message if you have any questions!
                                 </p>
                   
                       </div>
