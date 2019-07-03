@@ -974,7 +974,7 @@ font-style: normal;
     }
     
     .space:hover {
-        background-color: #f7f7f7;
+        background-color: #FFFEFC;
         height: 88px;
         transition: .2s ease-in-out;
         cursor: pointer;
@@ -996,13 +996,18 @@ font-style: normal;
         height: 72px;
     }
     
+   .featured:hover > .featuredSpace{
+        transition: .2s ease-in-out;
+         height: 14vh;
+    }
+    
     
         .featured {
         cursor: pointer;
         height: 80vh;
     }
             .featured:hover {
-        background-color: #f7f7f7;
+        background-color: #FFFEFC;
     }
     
         .inner {
@@ -1212,6 +1217,11 @@ font-style: normal;
   right: 32px;
         color: #ffffff;        
 }
+
+#audioSwitch:focus {
+   outline: none;
+}
+
     
 /*
     .textHover {

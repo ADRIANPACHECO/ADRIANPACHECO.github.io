@@ -1729,13 +1729,14 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                                            
                         
                     </div>
-                                       <div class="row">
+                                       <div class="row" id="1">
                         <div class="col">
                                 <p class="H1">How do you make Seattle a little more awesome?</p>
                         </div>
+                                            </div>
                 
-                    </div>
-                                          <div class="featuredSpace" >
+                    
+                                          <div class="featuredSpace" id="2" >
                                               
                       
                             <p class="alignleft H3"><strong>Seattle Design Nerds</strong><br> Digital Design, Interaction Design</p>
@@ -1745,6 +1746,7 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
           
                   
                         </div>
+                                          
 
               </div>
               
@@ -1805,14 +1807,14 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                          
                     var image = document.getElementById('play');
                      
-                         if(image_tracker=='Off'){
+                         if(image_tracker === 'Off'){
                      image.src='/images/Off.svg';
                         image_tracker='On';
                         }
                      else{
    
                             image.src='/images/On.svg';
-                            image_tracker='Off';
+                            image_tracker = 'Off';
                      }
                          
                      }
