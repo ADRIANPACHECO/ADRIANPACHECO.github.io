@@ -26,6 +26,7 @@
      margin: 0px;
 font-weight: 400;
     font-family: 'Muli', sans-serif;
+    
 }
 
 .H5 {
@@ -508,7 +509,8 @@ font-size: 20px;
 .pre-scrollable {
     max-height: 96vh;
     overflow-y: scroll; 
-    padding-bottom: 200px;
+    padding-bottom: 356px;
+   background: transparent;
 }
     
 .box {
@@ -568,14 +570,14 @@ font-size: 20px;
     }
     
     .project {
-        position: fixed;
+/*        position: fixed;*/
+        position: absolute;
         z-index: 1;
         height: 80vh;  
         width: 0; 
         left: 25%;
          background-color: white;
         transition: 1s ease-out;
-    
         overflow-x: hidden;
         
   
@@ -937,8 +939,8 @@ font-style: normal;
          
         border-bottom-style: solid;
         border-width: 1px;
-      padding: 11px;
-        padding-bottom: 4vh;
+      padding: 16px;
+       
  
     }
     .spacetitle {
@@ -972,18 +974,21 @@ font-style: normal;
         height: 72px;
         border-bottom-style: solid;
         border-width: 1px;
+        background: white;
     }
     
     .space:hover {
-        background-color: #FFFEFC;
         height: 88px;
         transition: .2s ease-in-out;
         cursor: pointer;
+        
+            
        
     }
     
     .space:active {
-        background-color: transparent;
+        background-color: black;
+        color: white;
         
     }
     
@@ -1012,11 +1017,18 @@ font-style: normal;
     }
     
         .inner {
-        padding-left: 11px;
+        padding: 16px;
         position: relative; 
         top: 50%; 
         transform: translateY(-50%);
        
+    }
+    
+    .work {
+                position: relative; 
+        top: 50%; 
+        transform: translateY(-50%);
+        
     }
     
     
@@ -1143,11 +1155,8 @@ font-style: normal;
 }
     
     .info {
-  
-        padding-left: 11px;
-      padding-top: 11px;
-        padding-bottom: 11px;
-        height: 100%;
+  padding: 16px;
+
 
     }
     

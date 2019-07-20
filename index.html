@@ -1,7 +1,6 @@
 <!--
 Designed and Developed by Adrian Pacheco
 Copyright © 2019 Adrian Pacheco 
-
 Something About Us © 
 2001 Daft Life under exclusive license to Parlophone Records Ltd./Parlophone Music, a division of Parlophone Music France 
 -->
@@ -48,10 +47,8 @@ Something About Us ©
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-93904883-1', 'auto');
       ga('send', 'pageview');
-
         
     </script>
     
@@ -112,7 +109,6 @@ Something About Us ©
                       
                     var myAudio = document.getElementById("myAudio");
                     var isPlaying = false;
-
                     function togglePlay() {
                       if (isPlaying) {
                         myAudio.pause()
@@ -143,14 +139,14 @@ Something About Us ©
 <!--TOP BAR-->
     <div class="container-fluid" style="height: 20vh" >
          <div class="row topbar">
-              <div class="col-6" style="text-align: left">
+              <div class="col-6" style="text-align: left" >
                   <a href="/index.html">
                   <video height="32px" preload playsinline autoplay muted loop style="position: relative; top: 50%; transform: translateY(-50%);">
                         <source src="/videos/logo-rotating.mp4" type="video/mp4" >
                   </video>
-                    
+                   
                       </a>
-<!--                  <p class="H2" style="font-size: 16px; padding-left: 11px; position: relative; top: 50%; transform: translateY(-50%);">Adrian Pacheco</p>-->
+<!--                  <span class="H2" style="font-size: 16px; padding-left: 8px">Adrian Pacheco</span>-->
              </div>
             <div class="col-6" style="text-align: right; ">
                 <p class="H2" id="time" style="position: relative; top: 50%; transform: translateY(-50%); font-size: 16px"></p>
@@ -175,9 +171,7 @@ Something About Us ©
                 var lblTime = document.getElementById("time");
                 lblTime.innerHTML = time;
                 var t = setTimeout(DisplayCurrentTime, 500);
-
             };
-
 		</script>
              
         </div>
@@ -244,7 +238,6 @@ Something About Us ©
                              d = 1;
                             day = "Monday";
                         } 
-
                        var month = new Array();
                           month[0] = "January";
                           month[1] = "February";
@@ -258,7 +251,6 @@ Something About Us ©
                           month[9] = "October";
                           month[10] = "November";
                           month[11] = "December";
-
                         document.getElementById("date").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                         
             if (d === 1) {
@@ -269,7 +261,6 @@ Something About Us ©
                         img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 2) {
                     document.getElementById("test").innerHTML = "New Moon - 0% Illumination";
@@ -279,7 +270,6 @@ Something About Us ©
                         img.src = "/images/moon/new-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 3) {
                     document.getElementById("test").innerHTML = "Waxing Crescent - 1% Illumination";
@@ -288,7 +278,6 @@ Something About Us ©
                         var img = new Image(48,48);
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
-
              };   
             } else if (d === 4) {
                     document.getElementById("test").innerHTML = "Waxing Crescent - 4% Illumination";
@@ -298,7 +287,6 @@ Something About Us ©
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 5) {
                     document.getElementById("test").innerHTML = "Waxing Crescent - 10% Illumination";
@@ -308,7 +296,6 @@ Something About Us ©
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 6) {
                     document.getElementById("test").innerHTML = "Waxing Crescent - 18% Illumination";
@@ -327,7 +314,6 @@ Something About Us ©
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 8) {
                     document.getElementById("test").innerHTML = "Waxing Crescent - 39% Illumination";
@@ -337,7 +323,6 @@ Something About Us ©
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 9) {
                     document.getElementById("test").innerHTML = "First Quarter - 51% Illumination";
@@ -347,7 +332,6 @@ Something About Us ©
                         img.src = "/images/moon/firstQtr-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 10) {
                     document.getElementById("test").innerHTML = "Waxing Gibbous - 62% Illumination";
@@ -357,7 +341,6 @@ Something About Us ©
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 11) {
                     document.getElementById("test").innerHTML = "Waxing Gibbous - 72% Illumination";
@@ -367,7 +350,6 @@ Something About Us ©
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 12) {
                     document.getElementById("test").innerHTML = "Waxing Gibbous - 81% Illumination";
@@ -377,7 +359,6 @@ Something About Us ©
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 13) {
                     document.getElementById("test").innerHTML = "Waxing Gibbous - 89% Illumination";
@@ -387,7 +368,6 @@ Something About Us ©
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             } else if (d === 14) {
                     document.getElementById("test").innerHTML = "Waxing Gibbous - 94% Illumination";
@@ -397,7 +377,6 @@ Something About Us ©
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo").appendChild(img);
             };
-
                 
             }  else if (d === 15) {
                 document.getElementById("test").innerHTML = "Waxing Gibbous - 98% Illumination";
@@ -581,7 +560,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         } 
                         
                       
-
                        var month = new Array();
                           month[0] = "January";
                           month[1] = "February";
@@ -595,7 +573,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                           month[9] = "October";
                           month[10] = "November";
                           month[11] = "December";
-
                         document.getElementById("date2").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                        
              if (d === 1) {
@@ -606,7 +583,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 2) {
                     document.getElementById("test2").innerHTML = "New Moon - 0% Illumination";
@@ -616,7 +592,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/new-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 3) {
                     document.getElementById("test2").innerHTML = "Waxing Crescent - 1% Illumination";
@@ -626,7 +601,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             }; 
-
                 
             } else if (d === 4) {
                     document.getElementById("test2").innerHTML = "Waxing Crescent - 4% Illumination";
@@ -636,7 +610,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 5) {
                     document.getElementById("test2").innerHTML = "Waxing Crescent - 10% Illumination";
@@ -646,7 +619,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 6) {
                     document.getElementById("test2").innerHTML = "Waxing Crescent - 18% Illumination";
@@ -665,7 +637,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 8) {
                     document.getElementById("test2").innerHTML = "Waxing Crescent - 39% Illumination";
@@ -675,7 +646,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 9) {
                     document.getElementById("test2").innerHTML = "First Quarter - 51% Illumination";
@@ -685,7 +655,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/firstQtr-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 10) {
                     document.getElementById("test2").innerHTML = "Waxing Gibbous - 62% Illumination";
@@ -695,7 +664,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 11) {
                     document.getElementById("test2").innerHTML = "Waxing Gibbous - 72% Illumination";
@@ -705,7 +673,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 12) {
                     document.getElementById("test2").innerHTML = "Waxing Gibbous - 81% Illumination";
@@ -715,7 +682,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 13) {
                     document.getElementById("test2").innerHTML = "Waxing Gibbous - 89% Illumination";
@@ -725,7 +691,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             } else if (d === 14) {
                     document.getElementById("test2").innerHTML = "Waxing Gibbous - 94% Illumination";
@@ -735,7 +700,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo2").appendChild(img);
             };
-
                 
             }  else if (d === 15) {
                 document.getElementById("test2").innerHTML = "Waxing Gibbous - 98% Illumination";
@@ -910,7 +874,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                              d = 1;
                             day = "Monday";
                         } 
-
                        var month = new Array();
                           month[0] = "January";
                           month[1] = "February";
@@ -924,7 +887,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                           month[9] = "October";
                           month[10] = "November";
                           month[11] = "December";
-
                         document.getElementById("date3").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                         
              if (d === 1) {
@@ -935,7 +897,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 2) {
                     document.getElementById("test3").innerHTML = "New Moon - 0% Illumination";
@@ -945,7 +906,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/new-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 3) {
                     document.getElementById("test3").innerHTML = "Waxing Crescent - 1% Illumination";
@@ -954,7 +914,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         var img = new Image(48,48);
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
-
              };  
             } else if (d === 4) {
                     document.getElementById("test3").innerHTML = "Waxing Crescent - 4% Illumination";
@@ -964,7 +923,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 5) {
                     document.getElementById("test3").innerHTML = "Waxing Crescent - 10% Illumination";
@@ -974,7 +932,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 6) {
                     document.getElementById("test3").innerHTML = "Waxing Crescent - 18% Illumination";
@@ -993,7 +950,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 8) {
                     document.getElementById("test3").innerHTML = "Waxing Crescent - 39% Illumination";
@@ -1003,7 +959,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 9) {
                     document.getElementById("test3").innerHTML = "First Quarter - 51% Illumination";
@@ -1013,7 +968,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/firstQtr-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 10) {
                     document.getElementById("test3").innerHTML = "Waxing Gibbous - 62% Illumination";
@@ -1023,7 +977,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 11) {
                     document.getElementById("test3").innerHTML = "Waxing Gibbous - 72% Illumination";
@@ -1033,7 +986,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 12) {
                     document.getElementById("test3").innerHTML = "Waxing Gibbous - 81% Illumination";
@@ -1043,7 +995,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 13) {
                     document.getElementById("test3").innerHTML = "Waxing Gibbous - 89% Illumination";
@@ -1053,7 +1004,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             } else if (d === 14) {
                     document.getElementById("test3").innerHTML = "Waxing Gibbous - 94% Illumination";
@@ -1063,7 +1013,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo3").appendChild(img);
             };
-
                 
             }  else if (d === 15) {
                 document.getElementById("test3").innerHTML = "Waxing Gibbous - 98% Illumination";
@@ -1252,7 +1201,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                           month[9] = "October";
                           month[10] = "November";
                           month[11] = "December";
-
                         document.getElementById("date4").innerHTML = "<strong>" + day + "</strong>" + "<br>" + month[n.getMonth()] + " " + d + ", " + y;
                         
              if (d === 1) {
@@ -1263,7 +1211,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/wanCres-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 2) {
                     document.getElementById("test4").innerHTML = "New Moon - 0% Illumination";
@@ -1273,7 +1220,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/new-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 3) {
                     document.getElementById("test4").innerHTML = "Waxing Crescent - 1% Illumination";
@@ -1282,7 +1228,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         var img = new Image(48,48);
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
-
               };    
             } else if (d === 4) {
                     document.getElementById("test4").innerHTML = "Waxing Crescent - 4% Illumination";
@@ -1292,7 +1237,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 5) {
                     document.getElementById("test4").innerHTML = "Waxing Crescent - 10% Illumination";
@@ -1302,7 +1246,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 6) {
                     document.getElementById("test4").innerHTML = "Waxing Crescent - 18% Illumination";
@@ -1321,7 +1264,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 8) {
                     document.getElementById("test4").innerHTML = "Waxing Crescent - 39% Illumination";
@@ -1331,7 +1273,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxCres-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 9) {
                     document.getElementById("test4").innerHTML = "First Quarter - 51% Illumination";
@@ -1341,7 +1282,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/firstQtr-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 10) {
                     document.getElementById("test4").innerHTML = "Waxing Gibbous - 62% Illumination";
@@ -1351,7 +1291,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 11) {
                     document.getElementById("test4").innerHTML = "Waxing Gibbous - 72% Illumination";
@@ -1361,7 +1300,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 12) {
                     document.getElementById("test4").innerHTML = "Waxing Gibbous - 81% Illumination";
@@ -1371,7 +1309,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 13) {
                     document.getElementById("test4").innerHTML = "Waxing Gibbous - 89% Illumination";
@@ -1381,7 +1318,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             } else if (d === 14) {
                     document.getElementById("test4").innerHTML = "Waxing Gibbous - 94% Illumination";
@@ -1391,7 +1327,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         img.src = "/images/moon/waxGib-LucaCarbone@2x.png";
                         document.getElementById("demo4").appendChild(img);
             };
-
                 
             }  else if (d === 15) {
                 document.getElementById("test4").innerHTML = "Waxing Gibbous - 98% Illumination";
@@ -1538,83 +1473,133 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
     <body>
         
 <!--LEFT SIDEBAR-->
+
+                                            
+                            
+                                            
+
+                       
+            
      
         <div class="container-fluid"style="height: 80vh" >
           <div class="row">
-              <div class="col-md-3 grid" >
-                  <div class="about">
-                            
-                      <p class="H3">I'm a Seattle-based freelance designer focused on user experience and user interface design. I'm actively searching for a full-time position at a creative space that builds identity systems, digital experiences, and exhibitions that create meaningful connections.
-                                </p>
-                  
-                      </div>
-                  <div class="spacetitle" style="padding-left: 11px;">
-                      <p class="H2" style="position: relative; top: 50%; transform: translateY(-50%);" >Selected Work</p>
+              <div class="col-md-3 grid" style="background: url(/images/sidebar.svg);">
+                        <div class="spacetitle" style="width: 100%; background: white">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">About</p>
+                            <a data-toggle="collapse" href="#collapseExampleAbout" aria-expanded="true" aria-controls="collapseExampleAbout"><span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span></a>
+                        
+                        </div>
+                  <div class="collapse.show"  id="collapseExampleAbout" style="background: white">
+             
+              <div class="about">
+                        
+                  <p class="H3">Hey there, I'm Adrian. I'm a multi-disciplinary designer focused on user experience and visual design. I have a background in Human-Computer Interaction and am interested in designing digital experiences that create meaningful connections to humans.
+                            </p>
+                 
+
+              
                   </div>
+                  </div>
+                                          <div class="spacetitle" style="width: 100%; background: white">
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Work</p>
+                            <a data-toggle="collapse" href="#collapseExampleWork" aria-expanded="true" aria-controls="collapseExampleAWork"><span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span></a>
+                        
+                        </div>
+                  <div class="collapse.show"  id="collapseExampleWork">
+ 
+        
                   
                   <div class="pre-scrollable">
                                           <div class="space" onclick="openBeyond()">
                         <div class="inner">
-                            
-                            <p class="H2">Beyond</p>
-                            <p class="H3">Brand Identity, Digital Design</p>
+                            <p class="alignleft H3 work"><strong>Beyond</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
                     </div>
-                     
-                    <div class="space" onclick="openEllia()">
-                        <div class="inner">
+                                          <div class="space" onclick="openViolet()">
 
-                            <p class="H2">Ellia</p>
-                            <p class="H3">Digital Design</p>
+                         <div class="inner">
+                            <p class="alignleft H3 work"><strong>Violet</strong><br>Brand Identity, Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
-                    </div>
-                   
-                   
                         
-                    <div class="space" onclick="openViolet()">
-                        <div class="inner" >
+                    </div>
+                     <div class="space" onclick="openDemocracyLab()">
+                                                                       <div class="inner">
+                            <p class="alignleft H3 work"><strong>DemocracyLab</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
+                        </div>
+                    </div>
+                                          <div class="space" onclick="openLinq()">
+                                                                       <div class="inner">
+                            <p class="alignleft H3 work"><strong>Linq</strong><br>Digital Design, Product Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
+                        </div>
+                    </div>
                       
-                            <p class="H2">Violet</p>
-                            <p class="H3">Brand Identity, Digital Design</p>
+                                            <div class="space" onclick="openMiguel()">
+   
+                                                   <div class="inner">
+                            <p class="alignleft H3 work"><strong>Miguel Designs</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
-                    </div>
-                        
-                
-                                          <div class="space" onclick="openDemocracyLab()">
-                        <div class="inner">
-                            
-                            <p class="H2">DemocracyLab</p>
-                            <p class="H3">Digital Design</p>
+                    </div> 
+                                                                <div class="space" onclick="openMarley()">
+                                                                       <div class="inner">
+                            <p class="alignleft H3 work"><strong>House of Marley</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
+
                     </div>
-                  
-                                 
-                     
-                    
                       
-                                          <div class="space" onclick="openMarley()">
-                        <div class="inner">
-                            
-                            <p class="H2">House of Marley</p>
-                            <p class="H3">Digital Design</p>
+                    <div class="space" onclick="openEllia()">
+                                                <div class="inner">
+                            <p class="alignleft H3 work"><strong>Ellia</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
                     </div>
-                     
+                                                                <div class="space" onclick="openUDSM()">
+
+                        <div class="inner">
+                            <p class="alignleft H3 work"><strong>University District Street Medicine</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
+                        </div>
+                    </div>
+                                                                <div class="space" onclick="openValidately()">
+                          <div class="inner">
+                            <p class="alignleft H3 work"><strong>Validately</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
+                        </div>
+                    </div>
+
 
                                           <div class="space" onclick="openPiestr()">
-                        <div class="inner">
-                        
-                            <p class="H2">Piestr</p>
-                            <p class="H3">Brand Identity, Digital Design</p>
+                                                                       <div class="inner">
+                            <p class="alignleft H3 work"><strong>Piestr</strong><br>Brand Identity, Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
                     </div>
                                   
                     <div class="space" onclick="openSignEasy()">
-                        <div class="inner" >
-                            <p class="H2">Sign Easy</p>
-                            <p class="H3">Digital Design</p>
+
+                        
+                                                 <div class="inner">
+                            <p class="alignleft H3 work"><strong>Sign Easy</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
                     </div>
+                      
                      
                       
 <!--
@@ -1637,53 +1622,21 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                         </div>
                     </div>
 -->
-                    
-                      <div class="space" onclick="openMiguel()">
-                        <div class="inner">
-                          
-                            <p class="H2">Miguel Designs</p>
-                            <p class="H3">Digital Design</p>
-                        </div>
-                    </div> 
-                      
-                                          <div class="space" onclick="openValidately()">
-                        <div class="inner">
-                            
-                            <p class="H2">Validately</p>
-                            <p class="H3">Digital Design</p>
-                        </div>
-                    </div>
-                      
-                                          <div class="space" onclick="openLinq()">
-                        <div class="inner">
-                           
-                            <p class="H2">Linq</p>
-                            <p class="H3">Digital Design, Product Design</p>
-                        </div>
-                    </div>
-            
-                                          <div class="space" onclick="openUDSM()">
-                        <div class="inner">
-                           
-                            <p class="H2">University District Street Medicine</p>
-                            <p class="H3">Digital Design</p>
-                        </div>
-                    </div>
-                      
-        
-                      
+    
                        <div class="space" onclick="openMoneySpace()">
-                        <div class="inner">
-                            
-                            <p class="H2">Money Space</p>
-                            <p class="H3">Digital Design</p>
+
+                                                   <div class="inner">
+                            <p class="alignleft H3 work"><strong>Money Space</strong><br>Digital Design</p>
+       
+                            <p class="alignright H3 work"><br><img src="/images/favorite.svg" style="padding-right: 8px; ">N/A</p>
                         </div>
                     </div>
-                      <img style="width: 100%;" src="/images/sidebar.svg">
+<!--                      <img style="width: 100%;" src="/images/sidebar.svg">-->
                         
                 </div>
 
 </div>
+              </div>
 
                 <div class="col-4 grid featured" onclick="openNav()">
                     <div class="spacetitle" >
@@ -1803,9 +1756,7 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
   
                         
                     var image_tracker = 'Off';
-
                      function change(){
-
                          
                     var image = document.getElementById('play');
                      
@@ -1823,7 +1774,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                       
                     var myAudio = document.getElementById("myAudio");
                     var isPlaying = false;
-
                     function togglePlay() {
                       if (isPlaying) {
                         myAudio.pause()
@@ -1848,7 +1798,6 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
 <!--
                     <div class="binary">
                     <p class="H5">
-
                         01101100 <button type="button" class="flash-button alignright" style="animation-delay: 55.0s; "></button><br>
                         01101111 <button type="button" class="flash-button alignright" style="animation-delay: 11.s;"></button> <br> 
                         01110110<br> 
@@ -1865,10 +1814,28 @@ if (d === 7 || d === 14 || d === 21 || d === 30){
                     </p>
                         </div>
 -->
-                            <div class="info " >
+                          <a id="myBtn">
+                                <div class="space" >
+                                    <div class="inner" >
+                                   <p class="H3"  >Subscribe With Space</p>
+                                        </div>
+                                
+                           
                                             <!-- Trigger/Open The Modal -->
-<button id="myBtn"><p class="H3">Subscribe<br> With Space</p></button>
+
                                 </div>
+                              </a>
+                                              <a href="/images/Pacheco_resume_2019.pdf" target="_blank">
+                                <div class="space" >
+                                    <div class="inner" >
+                                   <p class="H3"  >Download resume</p>
+                                        </div>
+                                
+                           
+                                            <!-- Trigger/Open The Modal -->
+
+                                </div>
+                              </a>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -1913,23 +1880,18 @@ font-weight: 400;
               
                     <script>// Get the modal
 var modal = document.getElementById('myModal');
-
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -1940,14 +1902,14 @@ window.onclick = function(event) {
                                             
             
         </div>
-                              <div id="MoneySpace" class="project">
+                              <div id="MoneySpace" class="project" style="z-index: 13;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeMoneySpace()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2033,27 +1995,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openMoneySpace() {
                         document.getElementById("MoneySpace").style.width = "75%";
                     }
-
                     function closeMoneySpace() {
                       document.getElementById("MoneySpace").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="UDSM" class="project">
+                              <div id="UDSM" class="project" style="z-index: 9;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeUDSM()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2136,27 +2094,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openUDSM() {
                         document.getElementById("UDSM").style.width = "75%";
                     }
-
                     function closeUDSM() {
                       document.getElementById("UDSM").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="Linq" class="project">
+                              <div id="Linq" class="project" style="z-index: 5;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeLinq()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2227,8 +2181,37 @@ window.onclick = function(event) {
                     <div class="col-7">
                     <p class="H2">Over the course of 10 weeks, we researched, designed, and prototyped a wearable device that helps friends and families stay in close proximity of each other without the need for the internet. Users are connected offline through haptic feedback and radio-proximity sensors that display the distance between you and others of the group. The wristwatch device is a user-friendly product that pairs with a mobile app to control advanced group settings.</p>
                         </div>
+                      
+                      
                     
                 </div>
+                                  <div class="photographer" style="border-bottom-style: solid; border-bottom-width: 1px;">
+    
+            <img class="image" src="/images/linq.png" style="padding: 16px">
+
+            </div>
+                                              <div class="row" style="border-bottom-style: solid; border-bottom-width: 1px;">
+                <div class="col-6" style="border-right-style: solid; border-right-width: 1px; padding-left: 0px; padding-right: 0px">
+                <div class="photographer">
+    
+            <img class="image" src="/images/linqMockup.png" style="padding: 16px">
+
+            </div>
+                  
+
+                </div>
+                                    <div class="col-6" style="padding-left: 0px; padding-right: 0px">
+                            <div class="photographer">
+    
+            <img class="image" src="/images/linqMockup2.png" style="padding: 16px">
+
+            </div>
+                
+
+                </div>
+            
+            </div>
+                                  
                         <div class="row spacetitleXL" style="padding-left: 0px">
                                 
                     <div class="col-4" >
@@ -2242,27 +2225,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openLinq() {
                         document.getElementById("Linq").style.width = "75%";
                     }
-
                     function closeLinq() {
                       document.getElementById("Linq").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="Validately" class="project">
+                              <div id="Validately" class="project" style="z-index: 10;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeValidately()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2348,28 +2327,24 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openValidately() {
                         document.getElementById("Validately").style.width = "75%";
                     }
-
                     function closeValidately() {
                       document.getElementById("Validately").style.width = "0";
                     }
                   
                         
-
-
                 </script>
               
-                              <div id="Miguel" class="project">
+                              <div id="Miguel" class="project" style="z-index: 6;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeMiguel()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2454,18 +2429,14 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openMiguel() {
                         document.getElementById("Miguel").style.width = "75%";
                     }
-
                     function closeMiguel() {
                       document.getElementById("Miguel").style.width = "0";
                     }
                   
                         
-
-
                 </script>
 <!--
                               <div id="BeDivergent" class="project">
@@ -2482,10 +2453,8 @@ window.onclick = function(event) {
                     </div>
                       </a>
                   
-
                 
                
-
             
                 
                 <div class="row box">
@@ -2531,7 +2500,6 @@ window.onclick = function(event) {
                 <marquee behavior="scroll" direction="left" scrollamount="6">
                     <p class="H1">How can real-time crime reports inform commuters about unsafe locations?</p>
             </marquee>
-
         </div>
                   <div class="row box">
                     <div class="col-7">
@@ -2548,19 +2516,15 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openBeDivergent() {
                         document.getElementById("BeDivergent").style.width = "75%";
                         
                     }
-
                     function closeBeDivergent() {
                       document.getElementById("BeDivergent").style.width = "0";
                     }
                   
                         
-
-
                 </script>
 -->
 <!--
@@ -2578,10 +2542,8 @@ window.onclick = function(event) {
                     </div>
                       </a>
                   
-
                 
                
-
                 
                 
                 <div class="row" style="padding-top: 16px">
@@ -2634,7 +2596,6 @@ window.onclick = function(event) {
                 <marquee behavior="scroll" direction="left" scrollamount="6">
                     <p class="H1">How can real-time crime reports inform commuters about unsafe locations?</p>
             </marquee>
-
         </div>
                   <div class="row box">
                     <div class="col-7">
@@ -2651,28 +2612,24 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openMesserCreations() {
                         document.getElementById("MesserCreations").style.width = "75%";
                     }
-
                     function closeMesserCreations() {
                       document.getElementById("MesserCreations").style.width = "0";
                     }
                   
                         
-
-
                 </script>
 -->
-                              <div id="SignEasy" class="project">
+                              <div id="SignEasy" class="project" style="z-index: 12;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeSignEasy()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2756,27 +2713,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openSignEasy() {
                         document.getElementById("SignEasy").style.width = "75%";
                     }
-
                     function closeSignEasy() {
                       document.getElementById("SignEasy").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="Piestr" class="project">
+                              <div id="Piestr" class="project" style="z-index: 11;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closePiestr()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2860,27 +2813,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openPiestr() {
                         document.getElementById("Piestr").style.width = "75%";
                     }
-
                     function closePiestr() {
                       document.getElementById("Piestr").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="Marley" class="project">
+                              <div id="Marley" class="project" style="z-index: 7;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeMarley()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -2963,27 +2912,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openMarley() {
                         document.getElementById("Marley").style.width = "75%";
                     }
-
                     function closeMarley() {
                       document.getElementById("Marley").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="DemocracyLab" class="project">
+                              <div id="DemocracyLab" class="project" style="z-index: 4;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeDemocracyLab()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -3066,27 +3011,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openDemocracyLab() {
                         document.getElementById("DemocracyLab").style.width = "75%";
                     }
-
                     function closeDemocracyLab() {
                       document.getElementById("DemocracyLab").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="Violet" class="project">
+                              <div id="Violet" class="project" style="z-index: 3;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeViolet()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -3169,27 +3110,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openViolet() {
                         document.getElementById("Violet").style.width = "75%";
                     }
-
                     function closeViolet() {
                       document.getElementById("Violet").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                              <div id="Ellia" class="project">
+                              <div id="Ellia" class="project" style="z-index: 8;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeEllia()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -3275,27 +3212,23 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openEllia() {
                         document.getElementById("Ellia").style.width = "75%";
                     }
-
                     function closeEllia() {
                       document.getElementById("Ellia").style.width = "0";
                     }
                   
                         
-
-
                 </script>
-                <div id="Beyond" class="project">
+                <div id="Beyond" class="project" style="z-index: 2;">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeBeyond()">
 <!--                        <div class="row sticky" onclick="closeSafely()" style="background-color: #FFFFFF">-->
                       
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -3382,18 +3315,14 @@ window.onclick = function(event) {
               </div>
                             <script type="text/javascript">
     
-
                     function openBeyond() {
                         document.getElementById("Beyond").style.width = "75%";
                     }
-
                     function closeBeyond() {
                       document.getElementById("Beyond").style.width = "0";
                     }
                   
                         
-
-
                 </script>
               <div id="Safely" class="project">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeSafely()">
@@ -3402,7 +3331,7 @@ window.onclick = function(event) {
                     <div class="row sticky overlay-content"  style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -4278,24 +4207,20 @@ window.onclick = function(event) {
                           
               <script type="text/javascript">
     
-
                     function openSafely() {
                         document.getElementById("Safely").style.width = "75%";
                     }
-
                     function closeSafely() {
                       document.getElementById("Safely").style.width = "0";
                     }
                   
                         
-
-
                 </script>
             <div class="project" id="myNav">
                     <div class="row sticky" onclick="closeNav()" style="background-color: #FFFFFF">
                         
                         <div class="spacetitle" id="back"style="width: 100%">
-                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Back</p>
+                            <p class="H2 alignleft" style="position: relative; top: 50%; transform: translateY(-50%)">Close Window</p>
                             <span class="dotBack alignright" style="position: relative; top: 50%; transform: translateY(-50%)"></span>
                         
                         </div>   
@@ -4354,8 +4279,7 @@ window.onclick = function(event) {
                     </div>
                                        <div class="col-4">
                          <a href="http://seattledesignnerds.org" target="_blank"><p class="H3">seattledesignnerds.org</p></a>
-                         <p class="H3">Trevor Dykstra, Jeremy Reding <jeremy.reding@gmail.com>,
-Vicki Ha, Letao Tao, James Taylor, Elise Loeb, Marlo Brown, Michelle Li, Marta Kapoyos, Rheanna Pless, Emily Danchik, Kirk Whayman, Joy Jin, Geoff Henkel, Chris Wong, George Zatloka, Anthony Blake, Janet Lee, Mike Hua, Jessie Kawata, Ken Roepe, Jing Zeng, Allison Schroeder</p>
+                         <p class="H3">Trevor Dykstra, Jeremy Reding, Vicki Ha, Letao Tao, James Taylor, Elise Loeb, Marlo Brown, Michelle Li, Marta Kapoyos, Rheanna Pless, Emily Danchik, Kirk Whayman, Joy Jin, Geoff Henkel, Chris Wong, George Zatloka, Anthony Blake, Janet Lee, Mike Hua, Jessie Kawata, Ken Roepe, Jing Zeng, Allison Schroeder</p>
                     
                     </div>
                     
@@ -4734,18 +4658,14 @@ The Seattle Design Nerds are a group of designers who come together each week to
             
               <script type="text/javascript">
     
-
                     function openNav() {
                         document.getElementById("myNav").style.width = "75%";
                     }
-
                     function closeNav() {
                       document.getElementById("myNav").style.width = "0";
                     }
                   
                         
-
-
                 </script>
                                              
 
